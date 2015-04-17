@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "dxesoft",
+    "packageName": "mx.com.dxesoft.dxesoft",
+    "packageFolder": "mx/com/dxesoft/dxesoft",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "useCompass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "6e47b223a974ce46cb3aa82b4d83a9353615b9e3"
+  }
+}
