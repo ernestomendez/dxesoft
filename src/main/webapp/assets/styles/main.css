@@ -5905,7 +5905,7 @@ tbody.collapse.in {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003427}}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #a6d0d2;
+  color: #98c8cb;
   background-color: #224142;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003435}}
@@ -5933,7 +5933,7 @@ tbody.collapse.in {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003464}}
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: #224142;
-  color: #a6d0d2;
+  color: #98c8cb;
 }
 @media (max-width: 767px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003475}}
@@ -5947,7 +5947,7 @@ tbody.collapse.in {
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003484}}
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #a6d0d2;
+    color: #98c8cb;
     background-color: #224142;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003492}}
@@ -6091,6 +6091,7 @@ tbody.collapse.in {
 .side-navbar-toggle {
   position: relative;
   float: left;
+  margin-left: 30px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_breadcrumbs\.scss}line{font-family:\000036}}
@@ -8816,4 +8817,9 @@ ul#strength {
 .main-menu-active {
   background-color: #326062;
   color: #FFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003296}}
+.navbar-brand {
+  padding-left: 1px;
 }
