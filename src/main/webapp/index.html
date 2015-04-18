@@ -12,6 +12,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css assets/styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css assets/styles/main.css -->
@@ -24,8 +25,9 @@
         <![endif]-->
         <div ng-show="{{ENV === 'dev'}}" class="development" ng-cloak=""></div>
         <div ui-view="navbar" ng-cloak=""></div>
-        <div class="container">
-            <div class="well" ui-view="content"></div>
+        <div class="container main-view-container" style="overflow: hidden; outline: none;">
+            <div ui-view="sidemenu" ng-cloak=""></div>
+            <div class="well main-content" ui-view="content"></div>
 
             <div class="footer">
                 <p translate="footer">This is your footer</p>
@@ -120,6 +122,7 @@
         <script src="scripts/components/auth/provider/auth.session.service.js"></script>
         <script src="scripts/app/account/sessions/sessions.js"></script>
         <script src="scripts/app/account/sessions/sessions.controller.js"></script>
+        <script src="scripts/components/sidemenu/sidemenu.controller.js"></script>
         <!-- endbuild -->
 </body>
 </html>

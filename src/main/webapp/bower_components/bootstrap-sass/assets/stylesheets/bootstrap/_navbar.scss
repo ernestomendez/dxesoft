@@ -232,6 +232,7 @@
 
 .navbar-nav {
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
+  float: right;
 
   > li > a {
     padding-top:    10px;
@@ -265,7 +266,7 @@
 
   // Uncollapse the nav
   @media (min-width: $grid-float-breakpoint) {
-    float: left;
+    float: right;
     margin: 0;
 
     > li {
@@ -660,4 +661,13 @@
       }
     }
   }
+}
+
+
+/**************************************************************************************************************************/
+
+.side-navbar-toggle {
+    position: relative;
+    float: left;
+
 }

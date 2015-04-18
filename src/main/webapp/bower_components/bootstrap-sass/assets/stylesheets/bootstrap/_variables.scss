@@ -347,6 +347,8 @@ $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
 
+$container-full:            100%;
+
 
 //== Navbar
 //
@@ -354,21 +356,21 @@ $container-lg:                 $container-large-desktop !default;
 
 // Basics of a navbar
 $navbar-height:                    50px !default;
-$navbar-margin-bottom:             $line-height-computed !default;
+$navbar-margin-bottom:             0px !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-bg:                #2D5658 !default;   ///VERDE MULTIPLE********************************************************************************
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-default-link-color:                #777 !default;
-$navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-color:                #AED4D6 !default;  ///VERDE MULTIPLE***********************************************************************
+$navbar-default-link-hover-color:          #FFF !default;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-color:         darken($navbar-default-link-color, 6.5%) !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
@@ -379,9 +381,9 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-hover-bg:           #2d353c !default;
+$navbar-default-toggle-icon-bar-bg:        #a8acb1 !default;
+$navbar-default-toggle-border-color:       #a8acb1 !default;
 
 
 // Inverted navbar
@@ -416,6 +418,8 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 
 //=== Shared nav styles
 $nav-link-padding:                          10px 15px !default;
+$nav-submenu-link-padding:                  10px 35px !default;
+$nav-sidemenu-link-padding-left:            35px !default;
 $nav-link-hover-bg:                         $gray-lighter !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
@@ -755,7 +759,7 @@ $thumbnail-caption-padding:   9px !default;
 //
 //##
 
-$well-bg:                     #f5f5f5 !default;
+$well-bg:                           #FFFFEA !default; //GRIS DOS********************************************************************
 $well-border:                 darken($well-bg, 7%) !default;
 
 
@@ -860,3 +864,40 @@ $page-header-border-color:    $gray-lighter !default;
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+/**************************************************************************************************************/
+
+$main-content-margin-left:          286px;
+$main-view-container-padding-top:   50px;
+
+
+/*******VERDE MULTIPLE ****************************/
+
+$sidemenudiv-background-default:        #2D5658;
+
+//$stacked-menu-bacground-color:      #2D5658;
+$stacked-menu-bacground-color:          #366669;
+//$stacked-menu-background-color-hover:   darken($stacked-menu-bacground-color, 4.5%) !default;
+$stacked-menu-background-color-hover:   #326062;
+$stacked-menu-color:                    #FFF;
+$stacked-menu-color-hover:              #FFF;
+$stacked-menu-bottom-border:            1px solid #326062;
+
+$submenu-background-color:              #2F595B;
+$submenu-bottom-border:                 1px solid #326062;
+$submenu-background-hover:              #326062;
+$submenu-active-background-color:       #326062;
+//$submenu-color:                         #AEB2B7;
+$submenu-color:                         #FAFBFB;
+$submenu-color-hover:                   #FFF;
+$submenu-color-active:                  #FFF;
+
+
+//$navbar-default-bg:                 #9ec63f !default;   ///ESTA VIENE POR DEFAULT HAY QUE ELIMINAR LA QUE EXISTE PREVIAMENTE EN ESTE ARCHIVO
+
+$body-background-color:             #F5F5F5;
+
+//$well-bg:                           #FFFFEA !default;  ///ESTA VIENE POR DEFAULT HAY QUE ELIMINAR LA QUE EXISTE PREVIAMENTE EN ESTE ARCHIVO
+
+
+/****************/

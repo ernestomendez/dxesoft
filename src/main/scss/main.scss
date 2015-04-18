@@ -5,31 +5,34 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // endbower
 
 body {
-    background: #fafafa;
+    //    background: #DBEAA5;   ///GRIS UNO Y DOS
+    //    background: #EDF0F5;    ///VERDE MULTIPLE OPCION UNO
+    //    background: #90B193;    ///VERDE MULTIPLE OPCION DOS
+    background: #C8D8C9;    ///VERDE MULTIPLE OPCION TRES
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    color: #797979;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
 
-.development {
-    position: absolute;
-    width: 149px;
-    height: 149px;
-    top: 0;
-    left: 0;
-    border: 0;
-    z-index: 1000;
-    background-image: url("../images/development_ribbon.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-}
+//.development {
+//    position: absolute;
+//    width: 149px;
+//    height: 149px;
+//    top: 0;
+//    left: 0;
+//    border: 0;
+//    z-index: 1000;
+//    background-image: url("../images/development_ribbon.png");
+//    background-position: center center;
+//    background-repeat: no-repeat;
+//}
 
 .navbar-version {
     font-size: 10px;
-    color: #ccc
+    color: #21272d
 }
 
 .browserupgrade {
@@ -111,3 +114,183 @@ ul#strength {
     width:20px;
 }
 /* end Password strength bar style */
+
+
+/* CSS used here will be applied after bootstrap.css */
+
+.nav-container {
+    font-size: 12px;
+    width: 100%;
+    display: none;
+    color: $stacked-menu-color;
+}
+
+.nav-stacked {
+    > li {
+        > a {
+            > div {
+
+                > i {
+                    position: absolute;
+                    left: 15px;
+                    right: auto;
+                    padding-top: 3px;
+
+                    &.fa-chevron-down {
+                        position: absolute;
+                        left: auto;
+                        right : 15px;
+                        font-size: 17px;
+                        padding-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.side-menu-div {
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    width: 270px;
+    background-color: $sidemenudiv-background-default;
+    color: $stacked-menu-color;
+    overflow-y: auto;
+    position: fixed;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 12px;
+
+    > ul {
+        > li {
+            border-bottom: $stacked-menu-bottom-border;
+            > a {
+                padding-left: $nav-sidemenu-link-padding-left;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    background-color: $stacked-menu-background-color-hover;
+                    color: $stacked-menu-color-hover;
+                }
+            }
+        }
+    }
+}
+
+.main-content  {
+    margin-left: $main-content-margin-left;
+}
+
+.main-view-container {
+    padding-left: 0;
+    padding-top: $main-view-container-padding-top;
+}
+
+
+@media (max-width: $grid-float-breakpoint-max) {
+    .main-content {
+        margin: 0px !important;
+    }
+
+    .side-menu-div {
+        margin: 0px !important;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        z-index: 1001;
+    }
+
+    .navbar-header{
+        width: $grid-float-breakpoint-max;
+    }
+
+}
+
+.side-menu-div {
+    @media (min-width: $grid-float-breakpoint) {
+        &.collapse {
+            height: 100% !important;
+        }
+    }
+}
+
+#stacked-menu{
+    padding-top: 3px;
+    background: $stacked-menu-bacground-color
+}
+
+.navbar {
+    > .container {
+        padding-left: 0px;
+    }
+}
+
+.navbar-header{
+    width: 270px;
+    background-color: #26494B;
+
+    &:after {
+        clear: none;
+    }
+}
+
+.navbar-collapse .side-menu-div{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+.submenu {
+    display: none;
+    background-color: $submenu-background-color;
+    font-size: 12px;
+
+    > li {
+        border-bottom: $submenu-bottom-border;
+
+        > a {
+            padding: $nav-submenu-link-padding;
+            color: $submenu-color;
+            //            color: #253939;
+            text-decoration: none;
+            -webkit-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                background-color: $submenu-background-hover;
+                color: $submenu-color-hover;
+            }
+        }
+
+        &.submenu-active {
+            > a {
+                background-color: $submenu-active-background-color;
+                color: $submenu-color-active;
+            }
+        }
+    }
+}
+
+.submenu-active {
+    background-color: $submenu-active-background-color;
+    //    background-color: $sidemenu-background-color-hover;
+    color: $submenu-color-active;
+}
+
+.main-menu-active {
+    background-color: $stacked-menu-background-color-hover;
+    color: #FFF;;
+    //    background-color: $sidemenu-background-color-hover;
+    //    color: $submenu-color-active;
+}
+
+

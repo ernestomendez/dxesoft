@@ -45,7 +45,7 @@ angular.module('dxesoftApp', ['LocalStorageModule', 'tmh.dynamicLocale',
             }
         };
     })
-    
+
     .config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, $translateProvider, tmhDynamicLocaleProvider, httpRequestInterceptorCacheBusterProvider) {
 
         //enable CSRF
@@ -59,6 +59,10 @@ angular.module('dxesoftApp', ['LocalStorageModule', 'tmh.dynamicLocale',
         $stateProvider.state('site', {
             'abstract': true,
             views: {
+                'sidemenu@': {
+                    templateUrl: 'scripts/components/sidemenu/sidemenu.html',
+                    controller: 'SidemenuController'
+                },
                 'navbar@': {
                     templateUrl: 'scripts/components/navbar/navbar.html',
                     controller: 'NavbarController'

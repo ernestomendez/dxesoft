@@ -1,0 +1,52 @@
+<div class="collapse navbar-collapse side-menu-div ng-cloak" id="side-menu" ng-switch="isAuthenticated()">
+    <ul class="nav nav-pills nav-stacked" id="stacked-menu">
+        <li>
+            <a class="nav-container" ui-sref="home">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span translate="global.menu.home">Home</span>
+                </div>
+            </a>
+        </li>
+        <li ng-switch-when="true">
+            <a class="nav-container" data-toggle="collapse" data-parent="#stacked-menu" data-target="#p2">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    <span class="hidden-tablet" translate="global.menu.entities.main">
+                    Entities
+                    </span>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </a>
+            <ul class="nav nav-pills nav-stacked panel-collapse collapse submenu" id="p2">
+                <!--<li ui-sref-active="submenu-active">-->
+                    <!--<a ui-sref="contact"><span class="glyphicon glyphicon-asterisk"></span>-->
+                        <!--&#xA0;<span translate="global.menu.entities.contact">contact</span></a>-->
+                <!--</li>-->
+            </ul>
+        </li>
+        <li ng-switch-when="true" ng-show="isInRole('ROLE_ADMIN')">
+            <a class="nav-container" data-toggle="collapse" data-parent="#stacked-menu" data-target="#p4">
+                <div>
+                    <i class="fa fa-university"></i>
+                    <span translate="global.menu.admin.main">Admin</span>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </a>
+            <ul class="nav nav-pills nav-stacked panel-collapse collapse submenu" id="p4">
+                <li ui-sref-active="submenu-active"><a ui-sref="metrics"><span class="glyphicon glyphicon-dashboard"></span>
+                    &#xA0;<span translate="global.menu.admin.metrics">Metrics</span></a></li>
+                <li ui-sref-active="submenu-active"><a ui-sref="health"><span class="glyphicon glyphicon-heart"></span>
+                    &#xA0;<span translate="global.menu.admin.health">Health</span></a></li>
+                <li ui-sref-active="submenu-active"><a ui-sref="configuration"><span class="glyphicon glyphicon-list-alt"></span>
+                    &#xA0;<span translate="global.menu.admin.configuration">Configuration</span></a></li>
+                <li ui-sref-active="submenu-active"><a ui-sref="audits"><span class="glyphicon glyphicon-bell"></span>
+                    &#xA0;<span translate="global.menu.admin.audits">Audits</span></a></li>
+                <li ui-sref-active="submenu-active"><a ui-sref="logs"><span class="glyphicon glyphicon-tasks"></span>
+                    &#xA0;<span translate="global.menu.admin.logs">Logs</span></a></li>
+                <li ui-sref-active="submenu-active"><a ui-sref="docs"><span class="glyphicon glyphicon-book"></span>
+                    &#xA0;<span translate="global.menu.admin.apidocs">API Docs</span></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
