@@ -1,3 +1,5 @@
+<li ui-sref-active="active" ><a ui-sref="contact"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.contact">contact</span></a></li>
 <nav class="navbar navbar-default navbar-fixed-top ng-cloak" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -13,20 +15,20 @@
         </div>
         <div class="" id="navbar-collapse" ng-switch="isAuthenticated()">
             <ul class="nav navbar-nav nav-pills navbar-right">
-                <!--<li ui-sref-active="active" ng-switch-when="true" class="dropdown pointer">-->
-                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="">-->
-                                <!--<span>-->
-                                    <!--<span class="glyphicon glyphicon-th-list"></span>-->
-                                    <!--<span class="hidden-tablet" translate="global.menu.entities.main">-->
-                                        <!--Entities-->
-                                    <!--</span>-->
-                                    <!--<b class="caret"></b>-->
-                                <!--</span>-->
-                    <!--</a>-->
-                    <!--<ul class="dropdown-menu">-->
-                        <!--&lt;!&ndash; JHipster will add entities to the menu here &ndash;&gt;-->
-                    <!--</ul>-->
-                <!--</li>-->
+                <li ui-sref-active="active" ng-switch-when="true" class="dropdown pointer">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                                <span>
+                                    <span class="glyphicon glyphicon-th-list"></span>
+                                    <span class="hidden-tablet" translate="global.menu.entities.main">
+                                        Entities
+                                    </span>
+                                    <b class="caret"></b>
+                                </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- JHipster will add entities to the menu here -->
+                    </ul>
+                </li>
                 <li ng-class="{active: $state.includes('account')}" class="dropdown pointer">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="">
                                 <span>

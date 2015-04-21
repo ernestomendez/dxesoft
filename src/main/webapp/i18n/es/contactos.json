@@ -1,0 +1,33 @@
+{
+    "dxesoftApp": {
+        "contactos" : {
+            "home": {
+                "title": "Contactos",
+                "createLabel": "Agregar un Contacto",
+                "createOrEditLabel": "Create or edit a Contact"
+            },
+            "delete": {
+                "question": "¿Esta seguro que desea eliminar al Contacto {{ name }}?"
+            },
+            "detail": {
+                "title": "Contact"
+            },
+            "nombres": "Nombres",
+            "apellidoPaterno": "Apellido paterno",
+            "apellidoMaterno": "Apellido materno",
+            "gender": "Género",
+            "birthDate": "Fecha de nacimiento",
+            "company": "Compañía",
+            "title": "Título",
+            "email": "Correo electrónico",
+            "phoneNumber": "Número de teléfono",
+            "address": "Dirección",
+            "facebook": "Facebook",
+            "tiwtter": "Tiwtter",
+            "legalId": "RFC",
+            "owner": "Propietario",
+            "creationDate": "CreationDate",
+            "dxesoftCompany": "DxesoftCompany"
+        }
+    }
+}

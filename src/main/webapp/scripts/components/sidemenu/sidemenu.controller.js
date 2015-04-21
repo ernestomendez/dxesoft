@@ -5,7 +5,7 @@
 'use strict';
 
 angular.module('dxesoftApp')
-    .controller('SidemenuController', function ($scope, $location, $state, Auth, Principal) {
+    .controller('SidemenuController', function ($scope, $location, $state, Principal) {
         $scope.isAuthenticated = Principal.isAuthenticated;
         $scope.isInRole = Principal.isInRole;
         $scope.$state = $state;

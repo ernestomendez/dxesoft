@@ -1,0 +1,170 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombres",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nombres",
+            "fieldNameUnderscored": "nombres",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "200"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "apellidoPaterno",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ApellidoPaterno",
+            "fieldNameUnderscored": "apellido_paterno",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "200"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "apellidoMaterno",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ApellidoMaterno",
+            "fieldNameUnderscored": "apellido_materno",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "200"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "gender",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Gender",
+            "fieldNameUnderscored": "gender",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "birthDate",
+            "fieldType": "LocalDate",
+            "fieldNameCapitalized": "BirthDate",
+            "fieldNameUnderscored": "birth_date",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "company",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Company",
+            "fieldNameUnderscored": "company",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "250"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Title",
+            "fieldNameUnderscored": "title",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "100"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Email",
+            "fieldNameUnderscored": "email",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "phoneNumber",
+            "fieldType": "String",
+            "fieldNameCapitalized": "PhoneNumber",
+            "fieldNameUnderscored": "phone_number",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "address",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Address",
+            "fieldNameUnderscored": "address",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "facebook",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Facebook",
+            "fieldNameUnderscored": "facebook",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "tiwtter",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Tiwtter",
+            "fieldNameUnderscored": "tiwtter",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "legalId",
+            "fieldType": "String",
+            "fieldNameCapitalized": "LegalId",
+            "fieldNameUnderscored": "legal_id",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 14,
+            "fieldName": "owner",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Owner",
+            "fieldNameUnderscored": "owner",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 15,
+            "fieldName": "creationDate",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "CreationDate",
+            "fieldNameUnderscored": "creation_date",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 16,
+            "fieldName": "dxesoftCompany",
+            "fieldType": "String",
+            "fieldNameCapitalized": "DxesoftCompany",
+            "fieldNameUnderscored": "dxesoft_Company",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": true,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "pagination": "pager",
+    "validation": true
+}

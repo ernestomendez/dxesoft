@@ -5,8 +5,13 @@
         "menu": {
             "home": "Inicio",
             "entities": {
-                "main": "Entities",
+                "main": "Entidades",
+                "contact": "Contacto",
                 "additionalEntity": "JHipster will add addtional entities"
+            },
+            "contacts": {
+                "main": "Contactos",
+                "contacts": "Contactos"
             },
             "account": {
                 "main": "Cuenta",
