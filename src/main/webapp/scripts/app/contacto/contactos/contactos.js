@@ -36,7 +36,7 @@ angular.module('dxesoftApp')
                     pageTitle: 'dxesoftApp.contactos.home.title'
                 },
                 onEnter: function($stateParams) {
-                    console.log('slakjsdflkjasdf', $stateParams);
+                    console.log('slakjsdflkjasdf', $stateParams.id);
                 },
                 views: {
                     'detail': {

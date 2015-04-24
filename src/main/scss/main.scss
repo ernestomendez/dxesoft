@@ -8,9 +8,11 @@ body {
     //    background: #DBEAA5;   ///GRIS UNO Y DOS
     //    background: #EDF0F5;    ///VERDE MULTIPLE OPCION UNO
     //    background: #90B193;    ///VERDE MULTIPLE OPCION DOS
-    background: #C8D8C9;    ///VERDE MULTIPLE OPCION TRES
+//    background: #C8D8C9;    ///VERDE MULTIPLE OPCION TRES
+    background: #F0F2F5;    ///VERDE MULTIPLE OPCION CUATRO
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #797979;
+//    color: #797979;
+    color: #777777;         ///VERDE MULTIPLE OPCION CUATRO
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -182,6 +184,7 @@ ul#strength {
 
 .main-content  {
     margin-left: $main-content-margin-left;
+    padding-top: 1px;
 }
 
 .main-view-container {
@@ -295,4 +298,61 @@ ul#strength {
 
 .navbar-brand {
     padding-left: 1px;
+}
+
+#contact-list {
+//    background-color: #27A78E;
+//    background-color: $elements-list-bg-color;
+    background-color: #33A8A2;
+//    background-color: #CFEDCA;
+    padding-left: 0;
+    padding-right: 0;
+    color: #212121;
+
+    > div {
+        &.list-element-green {
+//            border-top: 1px solid #000000;
+
+
+            &:hover {
+                cursor: pointer;
+//                border-bottom: 1px solid #ffffff;
+            }
+        }
+
+        &.list-element-green:nth-child(odd) {
+//            background-color: #DEE4E5;
+//            background-color: #AFC3AA;
+            background-color: #33BCA2;
+            &:hover {
+//                background-color: $elements-list-bg-color-hover;
+                background-color: lighten(#33BCA2, 6%);
+            }
+        }
+
+        &.list-element-green:nth-child(even) {
+//            background-color: #E7EBEC;
+//            background-color: #AEB98F;
+            background-color: #33C4BD;
+
+            &:hover {
+//                background-color: $elements-list-bg-color-hover;
+                background-color: lighten(#33C4BD, 6%);
+            }
+        }
+
+        &.selected {
+            cursor: pointer;
+            background-color: $elements-list-bg-color-hover;
+//            color: #000000;
+            color: #ffff00;
+//            border-top: 1px solid #ffffff;
+            border-top: 1px solid red;
+        }
+    }
+}
+
+
+.search-contact {
+    padding: 10px;
 }

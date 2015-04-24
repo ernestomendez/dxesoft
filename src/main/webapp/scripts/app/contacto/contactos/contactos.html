@@ -1,18 +1,28 @@
 <div>
-    <h2 translate="dxesoftApp.contactos.home.title">Contaccccct</h2>
+    <!--<h2 translate="dxesoftApp.contactos.home.title">Contaccccct</h2>-->
     <div class="row">
-        <div id="contact-list" class="col-xs-6 col-md-4" style="background-color: red">
-            .col-xs-6 .col-md-4
-            <div class="form-group" style="background-color: #006600">
-                Aqui va la busqueda
+        <div id="contact-list" class="col-xs-18 col-md-4 panel panel-primary">
+            <div class="form-group search-contact">
+                <form role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search contacts">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary">
+                                <span class="fa fa-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
             </div>
-            <div class="container-fluid" style="background-color: #e1e100">
-                <ul>
-                    <li ui-sref-active="selected" ng-repeat="contact in contacts">
-                        <a ui-sref="detail({id: contact.id})">{{contact.nombres}}</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="list-element-green" ng-repeat="contact in contacts" ng-click="setSelected(contact)">
+                    <div style="padding: 10px">
+                        <span>{{contact.nombres}}</span><span ng-show="contact.apellidoPaterno" style="padding-left: 5px">{{contact.apellidoPaterno }}</span><span ng-show="contact.apellidoMaterno" style="padding-left: 5px">{{contact.apellidoMaterno}}</span>
+                    </div>
+                    <div style="padding-left: 15px; font-size: small">
+                        <span>{{contact.email}}</span>
+                        <span style="padding-left:20px" ng-show="contact.phoneNumber">{{contact.phoneNumber}}</span>
+                    </div>
+                </div>
             <nav>
                 <ul class="pager">
                     <li ng-show="links['first']" ng-click="loadPage(links['first'])"><a href="#">&lt;&lt;</a></li>
@@ -22,8 +32,7 @@
                 </ul>
             </nav>
         </div>
-        <div id="contact-detail" class="col-xs-12 col-md-8" style="background-color: green">
-            <!--.col-xs-12 .col-md-8 muchos mil usos llegan diariamente para aca, ya no cabemos, ya no cabemos, ahií en su pueblo vivia como jefe sobrevivia con facilida, aqui en el df trabaja como negro y no le alcanza ni pa tragar-->
+        <div id="contact-detail" class="col-xs-18 col-md-8">
             <div class="detail" ui-view="detail">
 
             </div>

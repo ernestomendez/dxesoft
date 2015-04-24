@@ -868,7 +868,7 @@ $hr-border:                   $gray-lighter !default;
 /**************************************************************************************************************/
 
 $main-content-margin-left:          286px;
-$main-view-container-padding-top:   31px;
+$main-view-container-padding-top:   51px;
 
 
 /*******VERDE MULTIPLE ****************************/
@@ -896,6 +896,9 @@ $submenu-color-active:                  #FFF;
 //$navbar-default-bg:                 #9ec63f !default;   ///ESTA VIENE POR DEFAULT HAY QUE ELIMINAR LA QUE EXISTE PREVIAMENTE EN ESTE ARCHIVO
 
 $body-background-color:             #F5F5F5;
+
+$elements-list-bg-color:            #629065;
+$elements-list-bg-color-hover:      lighten($elements-list-bg-color, 6%);
 
 //$well-bg:                           #FFFFEA !default;  ///ESTA VIENE POR DEFAULT HAY QUE ELIMINAR LA QUE EXISTE PREVIAMENTE EN ESTE ARCHIVO
 
