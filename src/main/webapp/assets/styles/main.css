@@ -5878,8 +5878,8 @@ tbody.collapse.in {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003399}}
 .navbar-default {
-  background-color: #2D5658;
-  border-color: #224142;
+  background-color: #8CC152;
+  border-color: #7bb240;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003403}}
 .navbar-default .navbar-brand {
@@ -5896,17 +5896,17 @@ tbody.collapse.in {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003417}}
 .navbar-default .navbar-nav > li > a {
-  color: #AED4D6;
+  color: #424242;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003420}}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #FFF;
+  color: #212121;
   background-color: transparent;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003427}}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #98c8cb;
-  background-color: #224142;
+  color: #313131;
+  background-color: #7bb240;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003435}}
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -5928,27 +5928,27 @@ tbody.collapse.in {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003455}}
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #224142;
+  border-color: #7bb240;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003464}}
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #224142;
-  color: #98c8cb;
+  background-color: #7bb240;
+  color: #313131;
 }
 @media (max-width: 767px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003475}}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #AED4D6;
+    color: #424242;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003477}}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #FFF;
+    color: #212121;
     background-color: transparent;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003484}}
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #98c8cb;
-    background-color: #224142;
+    color: #313131;
+    background-color: #7bb240;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003492}}
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -5958,19 +5958,19 @@ tbody.collapse.in {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003508}}
 .navbar-default .navbar-link {
-  color: #AED4D6;
+  color: #424242;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003510}}
 .navbar-default .navbar-link:hover {
-  color: #FFF;
+  color: #212121;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003515}}
 .navbar-default .btn-link {
-  color: #AED4D6;
+  color: #424242;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003517}}
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #FFF;
+  color: #212121;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_navbar\.scss}line{font-family:\00003523}}
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
@@ -8555,23 +8555,23 @@ button.close {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\000037}}
 body {
-  background: #F0F2F5;
+  background: #F1F2F6;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #777777;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000313}}
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000330}}
 .navbar-version {
   font-size: 10px;
   color: #21272d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000335}}
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -8579,7 +8579,7 @@ body {
   padding: 0.2em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000342}}
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -8591,20 +8591,20 @@ body {
   padding: 60px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000353}}
 .hero-unit h1 {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000359}}
 .error {
   color: white;
   background-color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000364}}
 .hipster {
   display: inline-block;
   width: 347px;
@@ -8615,20 +8615,20 @@ body {
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000380}}
   .hipster {
     background: url("../images/hipster2x.png") no-repeat center top;
     background-size: contain;
   }
 }
 /* make sure browsers use the pointer cursor for anchors, even with no href */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000387}}
 a:hover {
   cursor: pointer;
 }
 
 /* start Password strength bar style */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\0000393}}
 ul#strength {
   display: inline;
   list-style: none;
@@ -8638,12 +8638,12 @@ ul#strength {
   vertical-align: 2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003102}}
 .point:last {
   margin: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003105}}
 .point {
   background: #DDD;
   border-radius: 2px;
@@ -8655,7 +8655,7 @@ ul#strength {
 
 /* end Password strength bar style */
 /* CSS used here will be applied after bootstrap.css */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003118}}
 .nav-container {
   font-size: 12px;
   width: 100%;
@@ -8663,14 +8663,14 @@ ul#strength {
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003130}}
 .nav-stacked > li > a > div > i {
   position: absolute;
   left: 15px;
   right: auto;
   padding-top: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003136}}
 .nav-stacked > li > a > div > i.fa-chevron-down {
   position: absolute;
   left: auto;
@@ -8679,7 +8679,7 @@ ul#strength {
   padding-top: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003150}}
 .side-menu-div {
   height: 100%;
   border-radius: 0;
@@ -8693,40 +8693,40 @@ ul#strength {
   padding-left: 0px;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003164}}
 .side-menu-div > ul > li {
   border-bottom: 1px solid #326062;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003166}}
 .side-menu-div > ul > li > a {
   padding-left: 35px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003169}}
 .side-menu-div > ul > li > a:hover, .side-menu-div > ul > li > a:focus {
   text-decoration: none;
   background-color: #326062;
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003180}}
 .main-content {
   margin-left: 286px;
   padding-top: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003185}}
 .main-view-container {
   padding-left: 0;
   padding-top: 51px;
 }
 
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003192}}
   .main-content {
     margin: 0px !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003196}}
   .side-menu-div {
     margin: 0px !important;
     height: auto;
@@ -8736,40 +8736,40 @@ ul#strength {
     z-index: 1001;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003205}}
   .navbar-header {
     width: 767px;
   }
 }
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003213}}
   .side-menu-div.collapse {
     height: 100% !important;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003224}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003219}}
 #stacked-menu {
   padding-top: 3px;
   background: #366669;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003225}}
 .navbar > .container {
   padding-left: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003230}}
 .navbar-header {
   width: 270px;
   background-color: #26494B;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003234}}
 .navbar-header:after {
   clear: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003239}}
 .navbar-collapse .side-menu-div {
   padding-right: 0px;
   padding-left: 0px;
@@ -8778,17 +8778,17 @@ ul#strength {
 /**
  * Submenu
  -----------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003247}}
 .submenu {
   display: none;
   background-color: #2F595B;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003252}}
 .submenu > li {
   border-bottom: 1px solid #326062;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003260}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003255}}
 .submenu > li > a {
   padding: 10px 35px;
   color: #FAFBFB;
@@ -8797,71 +8797,97 @@ ul#strength {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003264}}
 .submenu > li > a:hover, .submenu > li > a:focus {
   text-decoration: none;
   background-color: #326062;
   color: #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003278}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003273}}
 .submenu > li.submenu-active > a {
   background-color: #326062;
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003281}}
 .submenu-active {
   background-color: #326062;
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003287}}
 .main-menu-active {
   background-color: #326062;
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003299}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003294}}
 .navbar-brand {
-  padding-left: 1px;
+  padding-left: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003303}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003298}}
 #contact-list {
-  background-color: #33A8A2;
+  background-color: #26494B;
   padding-left: 0;
   padding-right: 0;
-  color: #212121;
+  color: #AED4D6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003317}}
-#contact-list > div.list-element-green:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003306}}
+#contact-list > div.form-group.search-contact.panel-heading {
+  background-color: inherit;
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003311}}
+#contact-list > div.panel-body {
+  height: 660px;
+  overflow-y: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003318}}
+#contact-list > div.panel-body > div.contact-list-element {
+  border-bottom: 1px dashed #8CC152;
+  padding-left: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003322}}
+#contact-list > div.panel-body > div.contact-list-element:nth-child(odd):hover {
   cursor: pointer;
+  border-left: 5px solid #D24D57;
+  padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003323}}
-#contact-list > div.list-element-green:nth-child(odd) {
-  background-color: #33BCA2;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003327}}
-#contact-list > div.list-element-green:nth-child(odd):hover {
-  background-color: #42ccb2;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003333}}
-#contact-list > div.list-element-green:nth-child(even) {
-  background-color: #33C4BD;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003338}}
-#contact-list > div.list-element-green:nth-child(even):hover {
-  background-color: #47cfc8;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003344}}
-#contact-list > div.selected {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003328}}
+#contact-list > div.panel-body > div.contact-list-element:nth-child(even):hover {
   cursor: pointer;
-  background-color: #729f75;
-  color: #ffff00;
-  border-top: 1px solid red;
+  border-left: 5px solid #EB974E;
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003335}}
+#contact-list > div.panel-body > div.contact-list-element > div.contact-list-name {
+  padding: 10px 0 5px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003339}}
+#contact-list > div.panel-body > div.contact-list-element > div.contact-list-contact-info {
+  padding-left: 15px;
+  font-size: small;
+  padding-bottom: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003346}}
+#contact-list > div.panel-body > div.contact-list-element.active:nth-child(even) {
+  border-left: 5px solid #EB974E;
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003352}}
+#contact-list > div.panel-body > div.contact-list-element.active:nth-child(odd) {
+  border-left: 5px solid #D24D57;
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003363}}
+#contact-list > div.panel-footer {
+  background-color: #8CC152;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003369}}
 .search-contact {
   padding: 10px;
 }

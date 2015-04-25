@@ -363,12 +363,13 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #777 !default;
-$navbar-default-bg:                #2D5658 !default;   ///VERDE MULTIPLE********************************************************************************
+//$navbar-default-bg:                #2D5658 !default;   ///VERDE MULTIPLE********************************************************************************
+$navbar-default-bg:                #8CC152 !default;   ///VERDE MULTIPLE2********************************************************************************
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-default-link-color:                #AED4D6 !default;  ///VERDE MULTIPLE***********************************************************************
-$navbar-default-link-hover-color:          #FFF !default;
+$navbar-default-link-color:                #424242 !default;  ///VERDE MULTIPLE***********************************************************************
+$navbar-default-link-hover-color:          #212121 !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         darken($navbar-default-link-color, 6.5%) !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
@@ -376,7 +377,7 @@ $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
-$navbar-default-brand-color:               $navbar-default-link-color !default;
+$navbar-default-brand-color:               #AED4D6 !default;
 $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
@@ -874,6 +875,7 @@ $main-view-container-padding-top:   51px;
 /*******VERDE MULTIPLE ****************************/
 
 $sidemenudiv-background-default:        #2D5658;
+//$sidemenudiv-background-default:        #416753;
 
 //$stacked-menu-bacground-color:      #2D5658;
 $stacked-menu-bacground-color:          #366669;
@@ -904,3 +906,15 @@ $elements-list-bg-color-hover:      lighten($elements-list-bg-color, 6%);
 
 
 /****************/
+
+$contact-list-bg-color:             #26494B;
+//$contact-list-color:                #F7F7F7;
+$contact-list-color:                $navbar-default-brand-color;
+$contact-list-panel-height:         660px;
+$contact-list-element-border:       1px dashed #8CC152;
+$contact-list-element-hover-odd:    5px solid #D24D57;
+$contact-list-element-hover-even:   5px solid #EB974E;
+$contact-list-footer-bg:            #8CC152;
+
+
+

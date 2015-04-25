@@ -5,13 +5,8 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // endbower
 
 body {
-    //    background: #DBEAA5;   ///GRIS UNO Y DOS
-    //    background: #EDF0F5;    ///VERDE MULTIPLE OPCION UNO
-    //    background: #90B193;    ///VERDE MULTIPLE OPCION DOS
-//    background: #C8D8C9;    ///VERDE MULTIPLE OPCION TRES
-    background: #F0F2F5;    ///VERDE MULTIPLE OPCION CUATRO
+    background: #F1F2F6;    ///VERDE MULTIPLE OPCION CUATRO
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-//    color: #797979;
     color: #777777;         ///VERDE MULTIPLE OPCION CUATRO
 }
 
@@ -297,61 +292,77 @@ ul#strength {
 }
 
 .navbar-brand {
-    padding-left: 1px;
+    padding-left: 20px;
 }
 
 #contact-list {
-//    background-color: #27A78E;
-//    background-color: $elements-list-bg-color;
-    background-color: #33A8A2;
-//    background-color: #CFEDCA;
+    background-color: $contact-list-bg-color;
     padding-left: 0;
     padding-right: 0;
-    color: #212121;
+    color: $contact-list-color;
 
     > div {
-        &.list-element-green {
-//            border-top: 1px solid #000000;
 
+        &.form-group.search-contact.panel-heading {
+            background-color: inherit;
+            border: none;
+        }
 
-            &:hover {
-                cursor: pointer;
-//                border-bottom: 1px solid #ffffff;
+        &.panel-body {
+            height: $contact-list-panel-height;
+            overflow-y: auto;
+            padding-left: 0;
+            padding-right: 0;
+
+            > div {
+                &.contact-list-element {
+                    border-bottom: $contact-list-element-border;
+                    padding-left: 20px;
+
+                    &:nth-child(odd):hover {
+                        cursor: pointer;
+                        border-left: $contact-list-element-hover-odd;
+                        padding-left: 15px;
+                    }
+
+                    &:nth-child(even):hover {
+                        cursor: pointer;
+                        border-left: $contact-list-element-hover-even;
+                        padding-left: 15px;
+                    }
+
+                    > div {
+                        &.contact-list-name {
+                            padding: 10px 0 5px 0;
+                        }
+
+                        &.contact-list-contact-info {
+                            padding-left: 15px; font-size: small;
+                            padding-bottom: 5px;
+                        }
+                    }
+
+                    &.active{
+                        &:nth-child(even) {
+                            border-left: $contact-list-element-hover-even;
+                            padding-left: 15px;
+                        }
+
+                        &:nth-child(odd) {
+                            border-left: $contact-list-element-hover-odd;
+                            padding-left: 15px;
+                        }
+
+                    }
+                }
             }
         }
 
-        &.list-element-green:nth-child(odd) {
-//            background-color: #DEE4E5;
-//            background-color: #AFC3AA;
-            background-color: #33BCA2;
-            &:hover {
-//                background-color: $elements-list-bg-color-hover;
-                background-color: lighten(#33BCA2, 6%);
-            }
-        }
-
-        &.list-element-green:nth-child(even) {
-//            background-color: #E7EBEC;
-//            background-color: #AEB98F;
-            background-color: #33C4BD;
-
-            &:hover {
-//                background-color: $elements-list-bg-color-hover;
-                background-color: lighten(#33C4BD, 6%);
-            }
-        }
-
-        &.selected {
-            cursor: pointer;
-            background-color: $elements-list-bg-color-hover;
-//            color: #000000;
-            color: #ffff00;
-//            border-top: 1px solid #ffffff;
-            border-top: 1px solid red;
+        &.panel-footer {
+            background-color: #8CC152;
         }
     }
 }
-
 
 .search-contact {
     padding: 10px;

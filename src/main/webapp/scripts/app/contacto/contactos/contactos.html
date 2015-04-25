@@ -1,8 +1,8 @@
 <div>
     <!--<h2 translate="dxesoftApp.contactos.home.title">Contaccccct</h2>-->
     <div class="row">
-        <div id="contact-list" class="col-xs-18 col-md-4 panel panel-primary">
-            <div class="form-group search-contact">
+        <div id="contact-list" class="col-xs-18 col-md-4 panel panel-default">
+            <div class="form-group search-contact panel-heading">
                 <form role="search">
                     <div class="input-group">
                         <input type="search" class="form-control" placeholder="Search contacts">
@@ -14,23 +14,27 @@
                     </div>
                 </form>
             </div>
-                <div class="list-element-green" ng-repeat="contact in contacts" ng-click="setSelected(contact)">
-                    <div style="padding: 10px">
+            <div class="panel-body">
+                <div class="contact-list-element" ng-repeat="contact in contacts" ng-click="setSelected(contact)" ng-class="{active: isActive(contact)}">
+                    <div class="contact-list-name" >
                         <span>{{contact.nombres}}</span><span ng-show="contact.apellidoPaterno" style="padding-left: 5px">{{contact.apellidoPaterno }}</span><span ng-show="contact.apellidoMaterno" style="padding-left: 5px">{{contact.apellidoMaterno}}</span>
                     </div>
-                    <div style="padding-left: 15px; font-size: small">
+                    <div class="contact-list-contact-info" >
                         <span>{{contact.email}}</span>
                         <span style="padding-left:20px" ng-show="contact.phoneNumber">{{contact.phoneNumber}}</span>
                     </div>
                 </div>
-            <nav>
-                <ul class="pager">
-                    <li ng-show="links['first']" ng-click="loadPage(links['first'])"><a href="#">&lt;&lt;</a></li>
-                    <li ng-show="links['prev']" ng-click="loadPage(links['prev'])"><a href="#">&lt;</a></li>
-                    <li ng-show="links['next']" ng-click="loadPage(links['next'])"><a href="#">&gt;</a></li>
-                    <li ng-show="links['last']" ng-click="loadPage(links['last'])"><a href="#">&gt;&gt;</a></li>
-                </ul>
-            </nav>
+            </div>
+            <div class="panel-footer">
+                <nav>
+                    <ul class="pager">
+                        <li ng-show="links['first']" ng-click="loadPage(links['first'])"><a href="#">&lt;&lt;</a></li>
+                        <li ng-show="links['prev']" ng-click="loadPage(links['prev'])"><a href="#">&lt;</a></li>
+                        <li ng-show="links['next']" ng-click="loadPage(links['next'])"><a href="#">&gt;</a></li>
+                        <li ng-show="links['last']" ng-click="loadPage(links['last'])"><a href="#">&gt;&gt;</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div id="contact-detail" class="col-xs-18 col-md-8">
             <div class="detail" ui-view="detail">

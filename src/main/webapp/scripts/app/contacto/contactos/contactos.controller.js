@@ -23,12 +23,16 @@ angular.module('dxesoftApp')
         $scope.contacto = '';
         $scope.selectedRow = null;
 
-            $scope.setSelected = function (contact) {
+        $scope.setSelected = function (contact) {
             console.log("set selected: ", contact);
             $scope.selectedContact = contact;
             console.log("selected contact: ", $scope.selectedContact);
             $rootScope.selectedContact = contact;
             $state.go('detail', {id: contact.id});
         }
+
+        $scope.isActive = function(contact) {
+            return $scope.selectedContact === contact;
+        };
 
     });
