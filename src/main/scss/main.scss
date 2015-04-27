@@ -8,6 +8,7 @@ body {
     background: #F1F2F6;    ///VERDE MULTIPLE OPCION CUATRO
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #777777;         ///VERDE MULTIPLE OPCION CUATRO
+    font-size: 12px;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -316,29 +317,39 @@ ul#strength {
 
             > div {
                 &.contact-list-element {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    overflow: auto;
                     border-bottom: $contact-list-element-border;
-                    padding-left: 20px;
+                    padding-left: 15px;
 
                     &:nth-child(odd):hover {
                         cursor: pointer;
                         border-left: $contact-list-element-hover-odd;
-                        padding-left: 15px;
+                        padding-left: 10px;
                     }
 
                     &:nth-child(even):hover {
                         cursor: pointer;
                         border-left: $contact-list-element-hover-even;
-                        padding-left: 15px;
+                        padding-left: 10px;
                     }
 
                     > div {
-                        &.contact-list-name {
-                            padding: 10px 0 5px 0;
-                        }
+                        &.contact-list-info {
+                            padding-left: 46px;
 
-                        &.contact-list-contact-info {
-                            padding-left: 15px; font-size: small;
-                            padding-bottom: 5px;
+                            > div {
+
+                                &.contact-list-name {
+                                    padding: 0 0 5px 0;
+                                    font-weight: 700;
+                                }
+
+                                &.contact-list-contact-info {
+                                    padding-left: 10px;
+                                }
+                            }
                         }
                     }
 
@@ -366,4 +377,16 @@ ul#strength {
 
 .search-contact {
     padding: 10px;
+}
+
+.img-circle{
+    border-radius: 50%;
+}
+
+.width-1 {
+    width: 40px;
+}
+
+.icon-close-to-text {
+    padding-right: 4px;
 }
