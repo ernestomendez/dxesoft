@@ -337,7 +337,7 @@ ul#strength {
 
                     > div {
                         &.contact-list-info {
-                            padding-left: 46px;
+                            padding-left: 48px;
 
                             > div {
 
@@ -356,12 +356,12 @@ ul#strength {
                     &.active{
                         &:nth-child(even) {
                             border-left: $contact-list-element-hover-even;
-                            padding-left: 15px;
+                            padding-left: 10px;
                         }
 
                         &:nth-child(odd) {
                             border-left: $contact-list-element-hover-odd;
-                            padding-left: 15px;
+                            padding-left: 10px;
                         }
 
                     }
@@ -387,6 +387,43 @@ ul#strength {
     width: 40px;
 }
 
+.height-1{
+    height: 40px;
+}
+
+.width-2 {
+    width: 80px;
+}
+
+.height-2{
+    height: 80px;
+}
+
 .icon-close-to-text {
     padding-right: 4px;
 }
+
+.float-left {
+    float: left;
+}
+
+
+
+/********************************************************************************************************************************************************/
+
+.contact-header {
+    overflow: auto;
+    padding-left: 0;
+}
+
+.width-3 {
+    width: 120px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+//div{
+//    border: 1px solid blue}

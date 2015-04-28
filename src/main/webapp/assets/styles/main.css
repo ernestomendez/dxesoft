@@ -8868,7 +8868,7 @@ ul#strength {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003339}}
 #contact-list > div.panel-body > div.contact-list-element > div.contact-list-info {
-  padding-left: 46px;
+  padding-left: 48px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003344}}
 #contact-list > div.panel-body > div.contact-list-element > div.contact-list-info > div.contact-list-name {
@@ -8882,12 +8882,12 @@ ul#strength {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003357}}
 #contact-list > div.panel-body > div.contact-list-element.active:nth-child(even) {
   border-left: 5px solid #EB974E;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003362}}
 #contact-list > div.panel-body > div.contact-list-element.active:nth-child(odd) {
   border-left: 5px solid #D24D57;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003372}}
 #contact-list > div.panel-footer {
@@ -8910,6 +8910,43 @@ ul#strength {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003390}}
+.height-1 {
+  height: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003394}}
+.width-2 {
+  width: 80px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003398}}
+.height-2 {
+  height: 80px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003402}}
 .icon-close-to-text {
-  padding-right: 3px;
+  padding-right: 4px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003406}}
+.float-left {
+  float: left;
+}
+
+/********************************************************************************************************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003414}}
+.contact-header {
+  overflow: auto;
+  padding-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003419}}
+.width-3 {
+  width: 120px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003423}}
+.no-margin {
+  margin: 0;
 }

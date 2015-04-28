@@ -16,7 +16,7 @@
             </div>
             <div class="panel-body">
                 <div class="contact-list-element" ng-repeat="contact in contacts" ng-click="setSelected(contact)" ng-class="{active: isActive(contact)}" style="display:block">
-                    <img class="img-circle img-responsive width-1" src="assets/images/profile.png" style="float: left">
+                    <img class="img-circle img-responsive width-1 height-1 float-left" src="assets/images/profile.png">
                     <div class="contact-list-info">
                         <div class="contact-list-name" >
                             <span>{{contact.nombres}}</span><span ng-show="contact.apellidoPaterno" style="padding-left: 5px">{{contact.apellidoPaterno }}</span><span ng-show="contact.apellidoMaterno" style="padding-left: 5px">{{contact.apellidoMaterno}}</span>
@@ -39,10 +39,8 @@
                 </nav>
             </div>
         </div>
-        <div id="contact-detail" class="col-xs-18 col-md-8">
-            <div class="detail" ui-view="detail">
+        <div id="contact-detail" class="col-xs-18 col-md-8" ui-view="detail">
 
-            </div>
         </div>
     </div>
 </div>

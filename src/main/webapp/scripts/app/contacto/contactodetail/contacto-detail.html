@@ -1,3 +1,84 @@
+<div ng-show="contactSelected" class="container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-2 col-md-2">
+            <img class="img-circle img-responsive width-2 height-2" src="assets/images/profile.png">
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-8" style="overflow: auto">
+            <h1 class="no-margin">
+                <span>{{contactSelected.nombres}}</span><span ng-show="contactSelected.apellidoPaterno" style="padding-left: 5px">{{contactSelected.apellidoPaterno }}</span><span ng-show="contactSelected.apellidoMaterno" style="padding-left: 5px">{{contactSelected.apellidoMaterno}}</span>
+            </h1>
+            <h4>
+                <span>{{contactSelected.company}}</span>
+            </h4>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2">
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" class="btn btn-primary">Delete</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    <i class="fa fa-mobile-phone fa-lg fa-fw"></i>
+                </dt>
+                <dd>
+                    Phone
+                </dd>
+                <dd>
+                    {{contactSelected.phoneNumber}}
+                </dd>
+            </dl>
+            <dl class="dl-horizontal">
+                <dt>
+                    <i class="fa fa-envelope-o fa-lg fa-fw"></i>
+                </dt>
+                <dd>
+                    Email
+                </dd>
+                <dd>
+                    {{contactSelected.email}}
+                </dd>
+            </dl>
+            <dl class="dl-horizontal">
+                <dt>
+                    <i class="fa fa-map-marker fa-lg fa-fw"></i>
+                </dt>
+                <dd>
+                    Address
+                </dd>
+                <dd>
+                    {{contactSelected.address}}
+                </dd>
+            </dl>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    <i class="fa fa-birthday-cake fa-lg fa-fw"></i>
+                </dt>
+                <dd>
+                    birthDate
+                </dd>
+                <dd>
+                    {{contactSelected.birthDate}}
+                </dd>
+            </dl>
+            <dl class="dl-horizontal">
+                <dt>
+                    <i class="fa fa-briefcase"></i>
+                </dt>
+                <dd>
+                    Title
+                </dd>
+                <dd>
+                    {{contactSelected.title}}
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+</div>
 isaufialusdfjk{{contactSelected.nombres}}
 {{contactSelected.apellidoPaterno}}
 {{contactSelected.apellidoMaterno}}
