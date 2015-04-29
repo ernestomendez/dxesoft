@@ -13,6 +13,11 @@
                         </span>
                     </div>
                 </form>
+                <div id="add-contact">
+                    <button class="btn btn-primary">
+                        <span style="border-right: 10px">Add contact</span> <i class="fa fa-plus-circle" style="font-size: 18px"></i>
+                    </button>
+                </div>
             </div>
             <div class="panel-body">
                 <div class="contact-list-element" ng-repeat="contact in contacts" ng-click="setSelected(contact)" ng-class="{active: isActive(contact)}" style="display:block">

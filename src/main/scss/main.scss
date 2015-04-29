@@ -181,6 +181,7 @@ ul#strength {
 .main-content  {
     margin-left: $main-content-margin-left;
     padding-top: 1px;
+    margin-top: 5px;
 }
 
 .main-view-container {
@@ -296,11 +297,16 @@ ul#strength {
     padding-left: 20px;
 }
 
+#contact-detail {
+    padding-top: $container-padding-top;
+}
+
 #contact-list {
     background-color: $contact-list-bg-color;
     padding-left: 0;
     padding-right: 0;
     color: $contact-list-color;
+    border-radius: 0;
 
     > div {
 
@@ -424,6 +430,54 @@ ul#strength {
     margin: 0;
 }
 
+//be careful with this magical number
+@media (max-width: 1399px) {
+    .dl-horizontal {
+        &.dl-icon {
+            > dt {
+                width: 30px;
+                text-align: left;
+                padding-top: 5px;
+            }
 
-//div{
-//    border: 1px solid blue}
+            > dd {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $grid-float-breakpoint-max) {
+    .dl-horizontal {
+        &.dl-icon {
+            > dd {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+/*****************************************************************************************************************************************/
+
+[class$="-primary"],
+[class*="-primary "] {
+    background-color: $navbar-default-bg;
+    border-color: $navbar-default-border;
+}
+
+.btn {
+    &-primary {
+
+        &:hover {
+            background-color: $navbar-default-border;
+            border-color: $navbar-default-bg;
+        }
+    }
+}
+
+#add-contact {
+    text-align: center;
+    padding-top: 10px;
+}
+
