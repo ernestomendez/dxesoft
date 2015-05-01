@@ -8823,23 +8823,25 @@ ul#strength {
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003294}}
 .navbar-brand {
   padding-left: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003300}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003298}}
 #contact-detail {
   padding-top: 15px;
+  float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003304}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003303}}
 #contact-list {
   background-color: #26494B;
   padding-left: 0;
   padding-right: 0;
   color: #AED4D6;
   border-radius: 0;
+  float: left;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003313}}
 #contact-list > div.form-group.search-contact.panel-heading {
@@ -8971,27 +8973,59 @@ ul#strength {
   }
 }
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003454}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003453}}
   .dl-horizontal.dl-icon > dd {
     margin-left: 0;
   }
 }
+@media (max-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003461}}
+  #contact-detail {
+    float: left;
+    width: 100%;
+  }
+}
 /*****************************************************************************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003463}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003469}}
 [class$="-primary"],
 [class*="-primary "] {
   background-color: #8CC152;
   border-color: #7bb240;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003472}}
-.btn-primary:hover {
-  background-color: #7bb240;
-  border-color: #8CC152;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003476}}
+.btn-primary {
+  color: #fff;
+  background-color: #8CC152;
+  border-color: #7bb240;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_buttons\.scss}line{font-family:\0000311}}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #72a53b;
+  border-color: #5c8530;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_buttons\.scss}line{font-family:\0000321}}
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_buttons\.scss}line{font-family:\0000329}}
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  background-color: #8CC152;
+  border-color: #7bb240;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/webapp\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_buttons\.scss}line{font-family:\0000340}}
+.btn-primary .badge {
+  color: #8CC152;
+  background-color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003480}}
+.btn-regular {
+  min-width: 70px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003479}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003485}}
 #add-contact {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }

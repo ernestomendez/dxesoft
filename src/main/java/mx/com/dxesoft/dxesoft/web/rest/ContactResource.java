@@ -106,4 +106,28 @@ public class ContactResource {
         log.debug("REST request to delete Contact : {}", id);
         contactRepository.delete(id);
     }
+
+    /**
+     * GET /contacts?nombre={nombre} -> search contacts by name.
+     *
+     * @param offset    page offset
+     * @param limit     limit of contacts by page
+     * @param nombre    nombre to search
+     * @return          list of contacts
+     * @throws URISyntaxException
+     */
+    @RequestMapping(value = "/contacts",
+                    params = {"nombre"},
+                    method = RequestMethod.GET,
+                    produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public ResponseEntity<List<Contact>> findByName(@RequestParam(value = "page" , required = false) Integer offset,
+                                                    @RequestParam(value = "per_page", required = false) Integer limit,
+                                                    @RequestParam("nombre") String nombre) throws URISyntaxException {
+        log.debug("REST request to get Contact by name");
+//        Page<Contact> page = contactRepository.findByNombresContainingIgnoreCaseOrApellidoPaternoContainingIgnoreCaseOrApellidoMaternoContainingIgnoreCase(nombre, nombre, nombre, PaginationUtil.generatePageRequest(offset, limit));
+        Page<Contact> page = contactRepository.findByNombresContainingOrApellidoPaternoContainingOrApellidoMaternoContainingQuery(nombre, nombre, nombre, PaginationUtil.generatePageRequest(offset, limit));
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/contacts", offset, limit);
+        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+    }
 }

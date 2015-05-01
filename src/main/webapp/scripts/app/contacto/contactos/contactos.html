@@ -1,21 +1,27 @@
 <div>
     <!--<h2 translate="dxesoftApp.contactos.home.title">Contaccccct</h2>-->
     <div class="row">
+        <div id="contact-detail" class="col-xs-18 col-md-8" ui-view="detail">
+
+        </div>
         <div id="contact-list" class="col-xs-18 col-md-4 panel panel-default">
             <div class="form-group search-contact panel-heading">
-                <form role="search">
+                <form class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength" role="form" novalidate ng-submit="findBy()">
                     <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Search contacts">
+                        <input type="search" class="form-control" placeholder="Search contacts" ng-model="searchContact">
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-primary">
+                            <button type="button" class="btn btn-primary" ng-click="findBy()">
                                 <span class="fa fa-search"></span>
                             </button>
                         </span>
                     </div>
                 </form>
                 <div id="add-contact">
-                    <button class="btn btn-primary">
-                        <span style="border-right: 10px">Add contact</span> <i class="fa fa-plus-circle" style="font-size: 18px"></i>
+                    <!--<button class="btn btn-primary">-->
+                        <!--<span style="padding-right: 10px">Add contact</span> <i class="fa fa-plus-circle" style="font-size: 18px"></i>-->
+                    <!--</button>-->
+                    <button class="btn btn-primary btn-lg btn-block">
+                        <span style="padding-right: 10px">Add contact</span> <i class="fa fa-plus-circle" ></i>
                     </button>
                 </div>
             </div>
@@ -43,9 +49,6 @@
                     </ul>
                 </nav>
             </div>
-        </div>
-        <div id="contact-detail" class="col-xs-18 col-md-8" ui-view="detail">
-
         </div>
     </div>
 </div>

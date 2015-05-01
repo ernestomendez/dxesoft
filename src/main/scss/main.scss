@@ -289,8 +289,6 @@ ul#strength {
 .main-menu-active {
     background-color: $stacked-menu-background-color-hover;
     color: #FFF;;
-    //    background-color: $sidemenu-background-color-hover;
-    //    color: $submenu-color-active;
 }
 
 .navbar-brand {
@@ -299,6 +297,7 @@ ul#strength {
 
 #contact-detail {
     padding-top: $container-padding-top;
+    float:right;
 }
 
 #contact-list {
@@ -307,6 +306,7 @@ ul#strength {
     padding-right: 0;
     color: $contact-list-color;
     border-radius: 0;
+    float:left;
 
     > div {
 
@@ -447,7 +447,6 @@ ul#strength {
     }
 }
 
-
 @media (max-width: $grid-float-breakpoint-max) {
     .dl-horizontal {
         &.dl-icon {
@@ -455,6 +454,13 @@ ul#strength {
                 margin-left: 0;
             }
         }
+    }
+}
+
+@media (max-width: $screen-md-min){
+    #contact-detail {
+        float: left;
+        width: 100%;
     }
 }
 
@@ -468,16 +474,16 @@ ul#strength {
 
 .btn {
     &-primary {
+        @include button-variant($btn-primary-color, $navbar-default-bg, $navbar-default-border);
+    }
 
-        &:hover {
-            background-color: $navbar-default-border;
-            border-color: $navbar-default-bg;
-        }
+    &-regular {
+        min-width: 70px;
     }
 }
 
 #add-contact {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 

@@ -14,6 +14,11 @@ angular.module('dxesoftApp')
                     return data;
                 }
             },
-            'update': { method:'PUT' }
+            'update': { method:'PUT' },
+            'findByName': {
+                method: 'GET',
+                params: {nombre : '@nombre'},
+                isArray: true
+            }
         });
     });

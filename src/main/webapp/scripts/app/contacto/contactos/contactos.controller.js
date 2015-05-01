@@ -8,7 +8,6 @@ angular.module('dxesoftApp')
         $scope.contacts = [];
         $scope.page = 1;
         $scope.loadAll = function() {
-            console.log("contactoscontroller.loadall");
             Contact.query({page: $scope.page, per_page: 20}, function(result, headers) {
                 $scope.links = ParseLinks.parse(headers('link'));
                 $scope.contacts = result;
@@ -24,15 +23,21 @@ angular.module('dxesoftApp')
         $scope.selectedRow = null;
 
         $scope.setSelected = function (contact) {
-            console.log("set selected: ", contact);
             $scope.selectedContact = contact;
-            console.log("selected contact: ", $scope.selectedContact);
             $rootScope.selectedContact = contact;
             $state.go('detail', {id: contact.id});
-        }
+        };
 
         $scope.isActive = function(contact) {
             return $scope.selectedContact === contact;
         };
+
+        $scope.findBy = function() {
+            console.log($scope.searchContact);
+            Contact.findByName({page: $scope.page, per_page:20, nombre:$scope.searchContact}, function(result, headers) {
+                $scope.links = ParseLinks.parse(headers('link'));
+                $scope.contacts = result;
+            });
+        }
 
     });
