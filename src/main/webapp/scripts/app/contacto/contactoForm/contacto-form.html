@@ -1,0 +1,210 @@
+<div class="modal-lg modal-add-contact">
+    <div class="modal-content">
+        <form name="form" role="form" novalidate
+              class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
+              ng-submit="create()">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                        ng-click="clear()">&times;</button>
+                <h4 class="modal-title" id="myElectorLabel" translate="dxesoftApp.contactos.home.createOrEditLabel">Create or edit a Elector</h4>
+            </div>
+            <div class="modal-body">
+                <!--<div class="form-group">-->
+                    <div class="row form-group">
+                        <div class="col-xs-4">
+                            <label for="input_nombres" translate="dxesoftApp.contactos.nombres">Nombres</label>
+                            <input id="input_nombres" type="text" class="form-control"
+                                   ng-model="contact.nombres" required ng-maxlength="200">
+                            <div ng-show="editForm.nombres.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.nombres.$error.required" translate="entity.validation.required">
+                                    This field is required.
+                                </p>
+                                <p class="help-block"
+                                   ng-show="editForm.nombres.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                                    This field cannot be longer than 200 characters.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <label for="input_paterno" translate="dxesoftApp.contactos.apellidoPaterno">Paterno</label>
+                            <input id="input_paterno" type="text" class="form-control"
+                                   ng-model="contact.apellidoPaterno" ng-maxlength="200">
+
+                            <div ng-show="editForm.apellidoPaterno.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.apellidoPaterno.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                                    This field cannot be longer than 200 characters.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <label for="input_materno" translate="dxesoftApp.contactos.apellidoMaterno">Materno</label>
+                            <input id="input_materno" type="text" class="form-control"
+                                   ng-model="contact.apellidoMaterno" ng-maxlength="200">
+
+                            <div ng-show="editForm.apellidoMaterno.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.apellidoMaterno.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                                    This field cannot be longer than 200 characters.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <label for="input_company" translate="dxesoftApp.contactos.company">Company</label>
+                            <input id="input_company" type="text" class="form-control"
+                                   ng-model="contact.company" ng-maxlength="250">
+
+                            <div ng-show="editForm.company.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.company.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="250">
+                                    This field cannot be longer than 250 characters.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <label for="input_title" translate="dxesoftApp.contactos.title">title</label>
+                            <input id="input_title" type="text" class="form-control"
+                                   ng-model="contact.title" ng-maxlength="100">
+
+                            <div ng-show="editForm.title.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.title.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="100">
+                                    This field cannot be longer than 100 characters.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <label translate="dxesoftApp.contactos.birthDate">BirthDate</label>
+                            <input type="date" class="form-control" name="birthDate"
+                                   ng-model="contact.birthDate">
+
+                            <div ng-show="editForm.birthDate.$invalid">
+                            </div>
+                        </div>
+                    </div>
+                <!--</div>-->
+            </div>
+            <div class="modal-body dxe-border-top">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="row form-group">
+                            <div class="col-xs-6">
+                                <label for="input_phone" translate="dxesoftApp.contactos.phone">phone</label>
+                                <input id="input_phone" class="form-control" ng-model="contact.phone">
+                            </div>
+                            <div class="col-xs-5">
+                                <label for="input_phone_type" translate="dxesoftApp.contactos.phone_type">Type</label>
+                                <select id="input_phone_type" class="form-control" style="min-width: 100%"
+                                    ng-model="contact.phoneType"
+                                    ng-options="phoneTypeOption.name | translate for phoneTypeOption in phoneTypeOptions">
+                                </select>
+                            </div>
+                            <div class="col-xs-1 phone-plus">
+                                <span class="add-row"><i class="fa fa-fw fa-lg fa-plus-square"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row form-group">
+                            <div class="col-xs-6">
+                                <label for="input_mail" translate="dxesoftApp.contactos.email">email</label>
+                                <input id="input_mail" class="form-control" ng-model="contact.email">
+                            </div>
+                            <div class="col-xs-5">
+                                <label for="input_email_type" translate="dxesoftApp.contactos.email_type">Type</label>
+                                <select id="input_email_type" class="form-control" style="min-width: 100%"
+                                        ng-model="contact.emailType"
+                                        ng-options="emailTypeOption.name | translate for emailTypeOption in emailTypeOptions">
+
+                                </select>
+                            </div>
+                            <div class="col-xs-1 phone-plus">
+                                <span class="add-row"><i class="fa fa-fw fa-lg fa-plus-square"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body dxe-border-top">
+                <div class="row">
+                    <div class="col-xs-11">
+                        <div class="row form-group">
+                            <div class="col-xs-12">
+                                <label for="input_street" translate="dxesoftApp.contactos.address.street">Calle</label>
+                                <input id="input_street" type="text" class="form-control"
+                                       ng-model="contact.address.street" ng-maxlength="250">
+                            </div>
+                        </div>
+                            <div class="row form-group">
+                                <div class="col-xs-4">
+                                    <label for="input_number_ext" translate="dxesoftApp.contactos.address.number_ext">number</label>
+                                    <input type="text" id="input_number_ext" class="form-control" ng-model="contact.address.number_ext" ng-maxlength="5">
+                                </div>
+                                <div class="col-xs-4">
+                                    <label for="input_number_int" translate="dxesoftApp.contactos.address.number_int">number</label>
+                                    <input id="input_number_int" type="text" class="form-control" ng-model="contact.address.number_int" ng-maxlength="5">
+                                </div>
+                                <div class="col-xs-4">
+                                    <label for="input_zipcode" translate="dxesoftApp.contactos.address.zip_code">Zip</label>
+                                    <input id="input_zipcode" type="number" class="form-control" ng-model="contact.address.zip_code" ng-maxlength="7">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-1 phone-plus">
+                        <span class="add-row"><i class="fa fa-fw fa-lg fa-plus-square"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body dxe-border-top">
+                <div class="row form-group">
+                    <div class="col-xs-4">
+                        <label for="input_website" translate="dxesoftApp.contactos.website">Web site</label><i class="text_spacer fa-lg fa fa-globe website-color"></i>
+                        <input id="input_website" type="text" class="form-control"
+                               ng-model="contact.website" ng-maxlength="200">
+                        <div ng-show="editForm.website.$invalid">
+                            <p class="help-block"
+                               ng-show="editForm.website.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                                This field cannot be longer than 200 characters.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="input_facebook" translate="dxesoftApp.contactos.facebook">Facebook</label><i class="text_spacer fa-lg fa fa-facebook-official facebook-color"></i>
+                        <input id="input_facebook" type="text" class="form-control"
+                               ng-model="contact.facebook" ng-maxlength="200">
+                        <div ng-show="editForm.facebook.$invalid">
+                            <p class="help-block"
+                               ng-show="editForm.facebook.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                                This field cannot be longer than 200 characters.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="input_twitter" translate="dxesoftApp.contactos.twitter">twitter</label><i class="text_spacer fa-lg fa fa-twitter twitter-color"></i>
+                        <input id="input_twitter" type="text" class="form-control"
+                               ng-model="contact.twitter" ng-maxlength="200">
+                        <div ng-show="editForm.twitter.$invalid">
+                            <p class="help-block"
+                               ng-show="editForm.twitter.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                                This field cannot be longer than 200 characters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                    <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

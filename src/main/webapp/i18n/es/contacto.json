@@ -3,14 +3,23 @@
         "contactos" : {
             "home": {
                 "title": "Contactos",
-                "createLabel": "Agregar un Contacto",
-                "createOrEditLabel": "Create or edit a Contact"
+                "createLabel": "Agregar un contacto",
+                "createOrEditLabel": "Agregar o editar un contacto"
             },
             "delete": {
                 "question": "¿Esta seguro que desea eliminar al Contacto {{ name }}?"
             },
             "detail": {
                 "title": "Contact"
+            },
+            "address": {
+                "title": "Dirección",
+                "street": "Calle",
+                "number_ext": "Número exterior",
+                "number_int": "Nùmero interior",
+                "suburb": "Colonia",
+                "city": "Ciudad",
+                "zip_code": "Código postal"
             },
             "nombres": "Nombres",
             "apellidoPaterno": "Apellido paterno",
@@ -21,13 +30,16 @@
             "title": "Título",
             "email": "Correo electrónico",
             "phoneNumber": "Número de teléfono",
-            "address": "Dirección",
             "facebook": "Facebook",
-            "tiwtter": "Tiwtter",
+            "twitter": "Twitter",
+            "website": "Web site",
             "legalId": "RFC",
             "owner": "Propietario",
             "creationDate": "CreationDate",
-            "dxesoftCompany": "DxesoftCompany"
+            "dxesoftCompany": "DxesoftCompany",
+            "phone": "Teléfono",
+            "phone_type": "Tipo",
+            "email_type": "Tipo"
         }
     }
 }

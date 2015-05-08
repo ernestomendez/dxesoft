@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('dxesoftApp', ['LocalStorageModule', 'tmh.dynamicLocale',
-    'ngResource', 'ui.router', 'ngCookies', 'pascalprecht.translate', 'ngCacheBuster', 'infinite-scroll'])
+    'ngResource', 'ui.router', 'ngCookies', 'pascalprecht.translate', 'ngCacheBuster', 'infinite-scroll', 'ui.bootstrap'])
 
     .run(function ($rootScope, $location, $window, $http, $state, $translate, Auth, Principal, Language, ENV, VERSION) {
         $rootScope.ENV = ENV;
@@ -88,7 +88,7 @@ angular.module('dxesoftApp', ['LocalStorageModule', 'tmh.dynamicLocale',
             urlTemplate: 'i18n/{lang}/{part}.json'
         });
 
-        $translateProvider.preferredLanguage('en');
+        $translateProvider.preferredLanguage('es');
         $translateProvider.useCookieStorage();
 
         tmhDynamicLocaleProvider.localeLocationPattern('bower_components/angular-i18n/angular-locale_{{locale}}.js');

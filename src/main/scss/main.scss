@@ -472,6 +472,12 @@ ul#strength {
     border-color: $navbar-default-border;
 }
 
+//[class$="-info"],
+//[class*="-info "] {
+//    background-color: $info-bg-color;
+//    border-color: $info-border-color;
+//}
+
 .btn {
     &-primary {
         @include button-variant($btn-primary-color, $navbar-default-bg, $navbar-default-border);
@@ -485,5 +491,57 @@ ul#strength {
 #add-contact {
     text-align: center;
     padding-top: 15px;
+}
+
+
+/*********************************************************************************************************************************************/
+
+.dxe-border-top {
+    border-top: $divider-border;
+    padding-top: 15px;
+}
+
+.modal-content {
+    background-color: $well-bg;
+}
+
+.form-group-subgroup{
+    padding-left: 10px;
+}
+
+/*******************************************************************************************************************************************/
+
+.phone-plus {
+    margin-top: 6%;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+.add-row {
+    cursor: pointer;
+    > i {
+        color: $info-bg-color;
+    }
+}
+
+.modal-add-contact {
+    max-height: 715px;
+    overflow: auto;
+}
+
+.text_spacer {
+    padding-left: 5px;
+}
+
+.twitter-color {
+    color: $twitter-color;
+}
+
+.facebook-color {
+    color: $facebook-color;
+}
+
+.website-color {
+    color: $info-bg-color;
 }
 

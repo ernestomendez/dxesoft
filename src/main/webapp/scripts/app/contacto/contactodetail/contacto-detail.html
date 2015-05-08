@@ -5,15 +5,15 @@
         </div>
         <div class="col-xs-12 col-sm-8 col-md-8" style="overflow: auto">
             <h1 class="no-margin">
-                <span>{{contactSelected.nombres}}</span><span ng-show="contactSelected.apellidoPaterno" style="padding-left: 5px">{{contactSelected.apellidoPaterno }}</span><span ng-show="contactSelected.apellidoMaterno" style="padding-left: 5px">{{contactSelected.apellidoMaterno}}</span>
+                <span>{{contactSelected.nombres}}</span><span class="text_spacer" ng-show="contactSelected.apellidoPaterno">{{contactSelected.apellidoPaterno }}</span><span class="text_spacer" ng-show="contactSelected.apellidoMaterno">{{contactSelected.apellidoMaterno}}</span>
             </h1>
             <h4>
                 <span>{{contactSelected.company}}</span>
             </h4>
         </div>
         <div class="col-xs-2 col-sm-2 col-md-2">
-            <button type="button" class="btn btn-primary btn-regular">Edit</button>
-            <button type="button" class="btn btn-primary btn-regular">Delete</button>
+            <button type="button" class="btn btn-primary btn-regular"><span translate="entity.action.edit"></span></button>
+            <button type="button" class="btn btn-primary btn-regular"><span translate="entity.action.delete"></span></button>
         </div>
     </div>
     <div class="row">
@@ -21,10 +21,9 @@
             <dl class="dl-horizontal dl-icon">
                 <dt>
                     <i class="fa fa-mobile-phone fa-lg fa-fw"></i>
-                    <!--<i class="fa fa-mobile-phone"></i>-->
                 </dt>
                 <dd>
-                    Phone
+                    <span translate="dxesoftApp.contactos.phone">Phone</span>
                 </dd>
                 <dd>
                     {{contactSelected.phoneNumber}}
@@ -33,10 +32,9 @@
             <dl class="dl-horizontal dl-icon">
                 <dt>
                     <i class="fa fa-envelope-o fa-lg fa-fw"></i>
-                    <!--<i class="fa fa-envelope-o"></i>-->
                 </dt>
                 <dd>
-                    Email
+                    <span translate="dxesoftApp.contactos.email">Email</span>
                 </dd>
                 <dd>
                     {{contactSelected.email}}
@@ -45,10 +43,9 @@
             <dl class="dl-horizontal dl-icon">
                 <dt>
                     <i class="fa fa-map-marker fa-lg fa-fw"></i>
-                    <!--<i class="fa fa-map-marker"></i>-->
                 </dt>
                 <dd>
-                    Address
+                    <span translate="dxesoftApp.contactos.address">Address</span>
                 </dd>
                 <dd>
                     {{contactSelected.address}}
@@ -59,10 +56,9 @@
             <dl class="dl-horizontal dl-icon">
                 <dt>
                     <i class="fa fa-birthday-cake fa-lg fa-fw"></i>
-                    <!--<i class="fa fa-birthday-cake"></i>-->
                 </dt>
                 <dd>
-                    birthDate
+                    <span translate="dxesoftApp.contactos.birthDate">birthDate</span>
                 </dd>
                 <dd>
                     {{contactSelected.birthDate}}
@@ -71,10 +67,9 @@
             <dl class="dl-horizontal dl-icon">
                 <dt>
                     <i class="fa fa-briefcase fa-lg fa-fw"></i>
-                    <!--<i class="fa fa-briefcase"></i>-->
                 </dt>
                 <dd>
-                    Title
+                    <span translate="dxesoftApp.contactos.title">Title</span>
                 </dd>
                 <dd>
                     {{contactSelected.title}}
@@ -84,6 +79,3 @@
     </div>
 
 </div>
-isaufialusdfjk{{contactSelected.nombres}}
-{{contactSelected.apellidoPaterno}}
-{{contactSelected.apellidoMaterno}}

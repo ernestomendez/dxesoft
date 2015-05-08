@@ -12,6 +12,15 @@
             "detail": {
                 "title": "Contact"
             },
+            "address": {
+                "title": "Address",
+                "street": "Street",
+                "number_ext": "Number",
+                "number_int": "Suite",
+                "suburb": "Suburb",
+                "city": "City",
+                "zip_code": "Zip"
+            },
             "nombres": "First Name",
             "apellidoPaterno": "Last name",
             "apellidoMaterno": "Mothers name",
@@ -21,13 +30,16 @@
             "title": "Title",
             "email": "Email",
             "phoneNumber": "PhoneNumber",
-            "address": "Address",
             "facebook": "Facebook",
-            "tiwtter": "Tiwtter",
+            "twitter": "Twitter",
+            "website": "Web site",
             "legalId": "SSN",
             "owner": "Owner",
             "creationDate": "CreationDate",
-            "dxesoftCompany": "DxesoftCompany"
+            "dxesoftCompany": "DxesoftCompany",
+            "phone": "Phone",
+            "phone_type": "Type",
+            "email_type": "Type"
         }
     }
 }

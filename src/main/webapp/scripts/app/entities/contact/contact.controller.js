@@ -49,7 +49,7 @@ angular.module('dxesoftApp')
         };
 
         $scope.clear = function () {
-            $scope.contact = {nombres: null, apellidoPaterno: null, apellidoMaterno: null, gender: null, birthDate: null, company: null, title: null, email: null, phoneNumber: null, address: null, facebook: null, tiwtter: null, legalId: null, owner: null, creationDate: null, dxesoftCompany: null, id: null};
+            $scope.contact = {nombres: null, apellidoPaterno: null, apellidoMaterno: null, gender: null, birthDate: null, company: null, title: null, email: null, phoneNumber: null, address: null, facebook: null, tiwtter: null, legalId: null, owner: null, creationDate: null, dxesoftCompany: null, id: null, phoneTypeId: null};
             $scope.editForm.$setPristine();
             $scope.editForm.$setUntouched();
         };

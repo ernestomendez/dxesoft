@@ -72,6 +72,17 @@
                     "maxlength": "Your e-mail cannot be longer than 50 characters."
                 }
             }
+        },
+        "phonetypes": {
+            "home": "Home",
+            "personal": "Personal",
+            "work": "Work",
+            "other": "Other"
+        },
+        "emailtypes": {
+            "personal": "Personal",
+            "work": "Work",
+            "other": "Other"
         }
     },
     "entity": {

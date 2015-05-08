@@ -8,7 +8,7 @@
             <div class="form-group search-contact panel-heading">
                 <form class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength" role="form" novalidate ng-submit="findBy()">
                     <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Search contacts" ng-model="searchContact">
+                        <input type="search" class="form-control" placeholder="{{'dxesoftApp.contactos.home.createLabel' | translate}}" ng-model="searchContact">
                         <span class="input-group-btn">
                             <button type="button" class="btn btn-primary" ng-click="findBy()">
                                 <span class="fa fa-search"></span>
@@ -17,12 +17,15 @@
                     </div>
                 </form>
                 <div id="add-contact">
-                    <!--<button class="btn btn-primary">-->
-                        <!--<span style="padding-right: 10px">Add contact</span> <i class="fa fa-plus-circle" style="font-size: 18px"></i>-->
-                    <!--</button>-->
-                    <button class="btn btn-primary btn-lg btn-block">
-                        <span style="padding-right: 10px">Add contact</span> <i class="fa fa-plus-circle" ></i>
-                    </button>
+                    <a class="btn btn-primary btn-lg btn-block" ui-sref="addContact">
+                        <span style="padding-right: 10px" translate="dxesoftApp.contactos.home.createLabel">Add contact</span> <i class="fa fa-plus-circle" ></i>
+                    </a>
+
+                    <div id="contact-add" ui-view>
+
+                    </div>
+
+
                 </div>
             </div>
             <div class="panel-body">
@@ -30,7 +33,7 @@
                     <img class="img-circle img-responsive width-1 height-1 float-left" src="assets/images/profile.png">
                     <div class="contact-list-info">
                         <div class="contact-list-name" >
-                            <span>{{contact.nombres}}</span><span ng-show="contact.apellidoPaterno" style="padding-left: 5px">{{contact.apellidoPaterno }}</span><span ng-show="contact.apellidoMaterno" style="padding-left: 5px">{{contact.apellidoMaterno}}</span>
+                            <span>{{contact.nombres}}</span><span class="text_spacer" ng-show="contact.apellidoPaterno">{{contact.apellidoPaterno }}</span><span class="text_spacer" ng-show="contact.apellidoMaterno">{{contact.apellidoMaterno}}</span>
                         </div>
                         <div class="contact-list-contact-info" >
                             <span ng-show="contact.phoneNumber"><i class="fa fa-mobile icon-close-to-text"></i>{{contact.phoneNumber}}</span>
