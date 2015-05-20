@@ -83,6 +83,11 @@
             "personal": "Personal",
             "work": "Trabajo",
             "other": "Otro"
+        },
+        "addresstypes": {
+            "primary": "Postal",
+            "delivery": "Entrega",
+            "invoice": "Factura"
         }
     },
     "entity": {

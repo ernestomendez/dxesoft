@@ -8,15 +8,8 @@ angular.module('dxesoftApp')
         $scope.contacts = [];
         $scope.page = 1;
         $scope.loadAll = function() {
-            //console.log("load all: ", headers);
-            //console.log("load all: ", result);
             Contact.query({page: $scope.page, per_page: 20}, function(result, headers, getResponseHeaders) {
-                console.log("headers: ", headers);
-                console.log("headers(link): ", headers('link'));
-                console.log("getResponseHeaders: ", getResponseHeaders);
                 $scope.links = ParseLinks.parse(headers('link'));
-                console.log("links: ", $scope.links);
-
                 $scope.contacts = result;
             });
         };

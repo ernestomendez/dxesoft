@@ -4,7 +4,8 @@
             "home": {
                 "title": "Contacts",
                 "createLabel": "Add a Contact",
-                "createOrEditLabel": "Create or edit a Contact"
+                "createOrEditLabel": "Create or edit a Contact",
+                "searchContact": "Find a contact"
             },
             "delete": {
                 "question": "Are you sure you want to delete Contact {{ nombre }}?"
@@ -19,7 +20,8 @@
                 "number_int": "Suite",
                 "suburb": "Suburb",
                 "city": "City",
-                "zip_code": "Zip"
+                "zip_code": "Zip",
+                "type": "Type"
             },
             "nombres": "First Name",
             "apellidoPaterno": "Last name",

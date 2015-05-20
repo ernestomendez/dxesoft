@@ -361,12 +361,12 @@ ul#strength {
 
                     &.active{
                         &:nth-child(even) {
-                            border-left: $contact-list-element-hover-even;
+                            border-left: $contact-list-element-selected;
                             padding-left: 10px;
                         }
 
                         &:nth-child(odd) {
-                            border-left: $contact-list-element-hover-odd;
+                            border-left: $contact-list-element-selected;
                             padding-left: 10px;
                         }
 
@@ -484,7 +484,7 @@ ul#strength {
     }
 
     &-regular {
-        min-width: 70px;
+        min-width: 76px;
     }
 }
 
@@ -513,7 +513,7 @@ ul#strength {
 
 .phone-plus {
     margin-top: 6%;
-    font-size: 18px;
+    font-size: 14px;
     padding-left: 0;
 }
 
@@ -543,5 +543,29 @@ ul#strength {
 
 .website-color {
     color: $info-bg-color;
+}
+
+.form-control {
+    height: 30px;
+    font-size: 12px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: #F5F5F5;
+}
+
+.vertical-spacer {
+    padding-top: 15px;
 }
 

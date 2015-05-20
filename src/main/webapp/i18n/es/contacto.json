@@ -4,7 +4,8 @@
             "home": {
                 "title": "Contactos",
                 "createLabel": "Agregar un contacto",
-                "createOrEditLabel": "Agregar o editar un contacto"
+                "createOrEditLabel": "Agregar o editar un contacto",
+                "searchContact": "Buscar un contacto"
             },
             "delete": {
                 "question": "¿Esta seguro que desea eliminar al Contacto {{ name }}?"
@@ -16,10 +17,11 @@
                 "title": "Dirección",
                 "street": "Calle",
                 "number_ext": "Número exterior",
-                "number_int": "Nùmero interior",
+                "number_int": "Número interior",
                 "suburb": "Colonia",
                 "city": "Ciudad",
-                "zip_code": "Código postal"
+                "zip_code": "Código postal",
+                "type": "Tipo"
             },
             "nombres": "Nombres",
             "apellidoPaterno": "Apellido paterno",

@@ -31,7 +31,7 @@ angular.module('dxesoftApp')
                 }
             })
             .state('detail', {
-                url: '/contactos/:id',
+                url: '/:id',
                 parent: 'contactos',
                 //url: '',
                 data: {
@@ -55,9 +55,8 @@ angular.module('dxesoftApp')
                 }
             })
             .state('addContact', {
-                //url: '/contactos/:id',
                 parent: 'detail',
-                //url: '',
+                //url: '/contacto/',
                 data: {
                     roles: ['ROLE_USER'],
                     pageTitle: 'dxesoftApp.contactos.home.title'
@@ -65,6 +64,7 @@ angular.module('dxesoftApp')
                 onEnter: ['$stateParams', '$state', '$modal', '$resource', function($stateParams, $state, $modal) {
                     console.log('on enter', $stateParams);
                     $modal.open({
+                        size:'lg',
                         templateUrl: 'scripts/app/contacto/contactoForm/contacto-form.html',
                         resolve: {
                             translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
@@ -75,10 +75,33 @@ angular.module('dxesoftApp')
                         controller: 'Contacto-formController'
 
                     }).result.finally(function() {
-                            $state.go('^');
                             console.log("modal finally")
                         });
                 }]
+            })
+            .state('detailContact', {
+                url: '/:id',
+                parent: 'contactos',
+                params: {'id': null},
+                //url: '',
+                data: {
+                    roles: ['ROLE_USER']
+                },
+                onEnter: function($stateParams) {
+                    console.log('%%%%%%%%%%% detailContact on enter', $stateParams.id);
+                },
+                views: {
+                    'detail': {
+                        templateUrl: 'scripts/app/contacto/contactodetail/contacto-detail.html',
+                        controller: 'Contacto-detail-remoteController'
+                    }
+                },
+                resolve: {
+                    translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
+                        $translatePartialLoader.addPart('contacto'); // ojo este debe estar definido en el controller
+                        return $translate.refresh();
+                    }]
+                }
             })
     }
 );

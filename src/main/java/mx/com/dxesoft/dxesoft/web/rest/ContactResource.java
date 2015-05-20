@@ -39,13 +39,10 @@ public class ContactResource {
             method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public ResponseEntity<Void> create(@Valid @RequestBody Contact contact) throws URISyntaxException {
+    public ResponseEntity<Contact> create(@Valid @RequestBody Contact contact) throws URISyntaxException {
         log.debug("REST request to save Contact : {}", contact);
-        if (contact.getId() != null) {
-            return ResponseEntity.badRequest().header("Failure", "A new contact cannot already have an ID").build();
-        }
         contactRepository.save(contact);
-        return ResponseEntity.created(new URI("/api/contacts/" + contact.getId())).build();
+        return new ResponseEntity<>(contact, HttpStatus.CREATED);
     }
 
     /**
@@ -57,9 +54,6 @@ public class ContactResource {
     @Timed
     public ResponseEntity<Void> update(@Valid @RequestBody Contact contact) throws URISyntaxException {
         log.debug("REST request to update Contact : {}", contact);
-        if (contact.getId() == null) {
-            return create(contact);
-        }
         contactRepository.save(contact);
         return ResponseEntity.ok().build();
     }

@@ -915,6 +915,7 @@ $contact-list-panel-height:         660px;
 $contact-list-element-border:       1px dashed #8CC152;
 $contact-list-element-hover-odd:    5px solid #D24D57;
 $contact-list-element-hover-even:   5px solid #EB974E;
+$contact-list-element-selected:     5px solid #4FC1E9;
 $contact-list-footer-bg:            #8CC152;
 
 /*******************/
@@ -926,6 +927,6 @@ $info-bg-color:                     #4FC1E9;
 $info-border-color:                 darken($info-bg-color, 6.5%) !default;
 
 $twitter-color:                     #55ACEE;
-$facbook-color:                     #3B5998;
+$facebook-color:                    #3B5998;
 
 

@@ -54,15 +54,6 @@ public class Contact implements Serializable {
     @Field("title")
     private String title;
 
-    @Field("email")
-    private String email;
-
-    @Field("phone_number")
-    private String phoneNumber;
-
-    @Field("address")
-    private String address;
-
     @Field("facebook")
     private String facebook;
 
@@ -149,30 +140,6 @@ public class Contact implements Serializable {
         this.title = title;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getFacebook() {
         return facebook;
     }
@@ -253,9 +220,6 @@ public class Contact implements Serializable {
                 ", birthDate='" + birthDate + "'" +
                 ", company='" + company + "'" +
                 ", title='" + title + "'" +
-                ", email='" + email + "'" +
-                ", phoneNumber='" + phoneNumber + "'" +
-                ", address='" + address + "'" +
                 ", facebook='" + facebook + "'" +
                 ", tiwtter='" + tiwtter + "'" +
                 ", legalId='" + legalId + "'" +

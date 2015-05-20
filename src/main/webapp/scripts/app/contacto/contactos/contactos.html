@@ -8,7 +8,7 @@
             <div class="form-group search-contact panel-heading">
                 <form class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength" role="form" novalidate ng-submit="findBy()">
                     <div class="input-group">
-                        <input type="search" class="form-control" placeholder="{{'dxesoftApp.contactos.home.createLabel' | translate}}" ng-model="searchContact">
+                        <input type="search" class="form-control" placeholder="{{'dxesoftApp.contactos.home.searchContact' | translate}}" ng-model="searchContact">
                         <span class="input-group-btn">
                             <button type="button" class="btn btn-primary" ng-click="findBy()">
                                 <span class="fa fa-search"></span>
@@ -20,12 +20,8 @@
                     <a class="btn btn-primary btn-lg btn-block" ui-sref="addContact">
                         <span style="padding-right: 10px" translate="dxesoftApp.contactos.home.createLabel">Add contact</span> <i class="fa fa-plus-circle" ></i>
                     </a>
-
                     <div id="contact-add" ui-view>
-
                     </div>
-
-
                 </div>
             </div>
             <div class="panel-body">

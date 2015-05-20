@@ -83,6 +83,11 @@
             "personal": "Personal",
             "work": "Work",
             "other": "Other"
+        },
+        "addresstypes": {
+            "primary": "Postal",
+            "delivery": "Delivery",
+            "invoice": "Invoice"
         }
     },
     "entity": {
