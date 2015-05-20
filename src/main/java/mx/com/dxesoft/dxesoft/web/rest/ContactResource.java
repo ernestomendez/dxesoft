@@ -1,7 +1,7 @@
 package mx.com.dxesoft.dxesoft.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
-import mx.com.dxesoft.dxesoft.domain.Contact;
+import mx.com.dxesoft.dxesoft.domain.contacts.Contact;
 import mx.com.dxesoft.dxesoft.repository.ContactRepository;
 import mx.com.dxesoft.dxesoft.web.rest.util.PaginationUtil;
 import org.slf4j.Logger;
@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
 import javax.validation.Valid;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;

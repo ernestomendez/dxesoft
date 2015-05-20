@@ -1,6 +1,6 @@
 package mx.com.dxesoft.dxesoft.repository;
 
-import mx.com.dxesoft.dxesoft.domain.Contact;
+import mx.com.dxesoft.dxesoft.domain.contacts.Contact;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;

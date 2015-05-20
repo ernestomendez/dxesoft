@@ -1,7 +1,7 @@
 package mx.com.dxesoft.dxesoft.web.rest;
 
 import mx.com.dxesoft.dxesoft.Application;
-import mx.com.dxesoft.dxesoft.domain.Contact;
+import mx.com.dxesoft.dxesoft.domain.contacts.Contact;
 import mx.com.dxesoft.dxesoft.repository.ContactRepository;
 
 import org.joda.time.DateTime;
@@ -105,9 +105,9 @@ public class ContactResourceTest {
         contact.setBirthDate(DEFAULT_BIRTH_DATE);
         contact.setCompany(DEFAULT_COMPANY);
         contact.setTitle(DEFAULT_TITLE);
-        contact.setEmail(DEFAULT_EMAIL);
-        contact.setPhoneNumber(DEFAULT_PHONE_NUMBER);
-        contact.setAddress(DEFAULT_ADDRESS);
+//        contact.setEmail(DEFAULT_EMAIL);
+//        contact.setPhoneNumber(DEFAULT_PHONE_NUMBER);
+//        contact.setAddress(DEFAULT_ADDRESS);
         contact.setFacebook(DEFAULT_FACEBOOK);
         contact.setTiwtter(DEFAULT_TIWTTER);
         contact.setLegalId(DEFAULT_LEGAL_ID);
@@ -138,9 +138,9 @@ public class ContactResourceTest {
         assertThat(testContact.getBirthDate()).isEqualTo(DEFAULT_BIRTH_DATE);
         assertThat(testContact.getCompany()).isEqualTo(DEFAULT_COMPANY);
         assertThat(testContact.getTitle()).isEqualTo(DEFAULT_TITLE);
-        assertThat(testContact.getEmail()).isEqualTo(DEFAULT_EMAIL);
-        assertThat(testContact.getPhoneNumber()).isEqualTo(DEFAULT_PHONE_NUMBER);
-        assertThat(testContact.getAddress()).isEqualTo(DEFAULT_ADDRESS);
+//        assertThat(testContact.getEmail()).isEqualTo(DEFAULT_EMAIL);
+//        assertThat(testContact.getPhoneNumber()).isEqualTo(DEFAULT_PHONE_NUMBER);
+//        assertThat(testContact.getAddress()).isEqualTo(DEFAULT_ADDRESS);
         assertThat(testContact.getFacebook()).isEqualTo(DEFAULT_FACEBOOK);
         assertThat(testContact.getTiwtter()).isEqualTo(DEFAULT_TIWTTER);
         assertThat(testContact.getLegalId()).isEqualTo(DEFAULT_LEGAL_ID);
@@ -166,9 +166,9 @@ public class ContactResourceTest {
                 .andExpect(jsonPath("$.[0].birthDate").value(DEFAULT_BIRTH_DATE.toString()))
                 .andExpect(jsonPath("$.[0].company").value(DEFAULT_COMPANY.toString()))
                 .andExpect(jsonPath("$.[0].title").value(DEFAULT_TITLE.toString()))
-                .andExpect(jsonPath("$.[0].email").value(DEFAULT_EMAIL.toString()))
-                .andExpect(jsonPath("$.[0].phoneNumber").value(DEFAULT_PHONE_NUMBER.toString()))
-                .andExpect(jsonPath("$.[0].address").value(DEFAULT_ADDRESS.toString()))
+//                .andExpect(jsonPath("$.[0].email").value(DEFAULT_EMAIL.toString()))
+//                .andExpect(jsonPath("$.[0].phoneNumber").value(DEFAULT_PHONE_NUMBER.toString()))
+//                .andExpect(jsonPath("$.[0].address").value(DEFAULT_ADDRESS.toString()))
                 .andExpect(jsonPath("$.[0].facebook").value(DEFAULT_FACEBOOK.toString()))
                 .andExpect(jsonPath("$.[0].tiwtter").value(DEFAULT_TIWTTER.toString()))
                 .andExpect(jsonPath("$.[0].legalId").value(DEFAULT_LEGAL_ID.toString()))
@@ -194,9 +194,9 @@ public class ContactResourceTest {
             .andExpect(jsonPath("$.birthDate").value(DEFAULT_BIRTH_DATE.toString()))
             .andExpect(jsonPath("$.company").value(DEFAULT_COMPANY.toString()))
             .andExpect(jsonPath("$.title").value(DEFAULT_TITLE.toString()))
-            .andExpect(jsonPath("$.email").value(DEFAULT_EMAIL.toString()))
-            .andExpect(jsonPath("$.phoneNumber").value(DEFAULT_PHONE_NUMBER.toString()))
-            .andExpect(jsonPath("$.address").value(DEFAULT_ADDRESS.toString()))
+//            .andExpect(jsonPath("$.email").value(DEFAULT_EMAIL.toString()))
+//            .andExpect(jsonPath("$.phoneNumber").value(DEFAULT_PHONE_NUMBER.toString()))
+//            .andExpect(jsonPath("$.address").value(DEFAULT_ADDRESS.toString()))
             .andExpect(jsonPath("$.facebook").value(DEFAULT_FACEBOOK.toString()))
             .andExpect(jsonPath("$.tiwtter").value(DEFAULT_TIWTTER.toString()))
             .andExpect(jsonPath("$.legalId").value(DEFAULT_LEGAL_ID.toString()))
@@ -225,9 +225,9 @@ public class ContactResourceTest {
         contact.setBirthDate(UPDATED_BIRTH_DATE);
         contact.setCompany(UPDATED_COMPANY);
         contact.setTitle(UPDATED_TITLE);
-        contact.setEmail(UPDATED_EMAIL);
-        contact.setPhoneNumber(UPDATED_PHONE_NUMBER);
-        contact.setAddress(UPDATED_ADDRESS);
+//        contact.setEmail(UPDATED_EMAIL);
+//        contact.setPhoneNumber(UPDATED_PHONE_NUMBER);
+//        contact.setAddress(UPDATED_ADDRESS);
         contact.setFacebook(UPDATED_FACEBOOK);
         contact.setTiwtter(UPDATED_TIWTTER);
         contact.setLegalId(UPDATED_LEGAL_ID);
@@ -250,9 +250,9 @@ public class ContactResourceTest {
         assertThat(testContact.getBirthDate()).isEqualTo(UPDATED_BIRTH_DATE);
         assertThat(testContact.getCompany()).isEqualTo(UPDATED_COMPANY);
         assertThat(testContact.getTitle()).isEqualTo(UPDATED_TITLE);
-        assertThat(testContact.getEmail()).isEqualTo(UPDATED_EMAIL);
-        assertThat(testContact.getPhoneNumber()).isEqualTo(UPDATED_PHONE_NUMBER);
-        assertThat(testContact.getAddress()).isEqualTo(UPDATED_ADDRESS);
+//        assertThat(testContact.getEmail()).isEqualTo(UPDATED_EMAIL);
+//        assertThat(testContact.getPhoneNumber()).isEqualTo(UPDATED_PHONE_NUMBER);
+//        assertThat(testContact.getAddress()).isEqualTo(UPDATED_ADDRESS);
         assertThat(testContact.getFacebook()).isEqualTo(UPDATED_FACEBOOK);
         assertThat(testContact.getTiwtter()).isEqualTo(UPDATED_TIWTTER);
         assertThat(testContact.getLegalId()).isEqualTo(UPDATED_LEGAL_ID);

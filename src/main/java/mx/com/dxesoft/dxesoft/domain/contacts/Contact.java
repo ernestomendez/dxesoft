@@ -1,4 +1,4 @@
-package mx.com.dxesoft.dxesoft.domain;
+package mx.com.dxesoft.dxesoft.domain.contacts;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -14,6 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.validation.constraints.*;
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -75,6 +76,12 @@ public class Contact implements Serializable {
     @NotNull
     @Field("dxesoft_Company")
     private String dxesoftCompany;
+
+    private List<PhoneNumber> phoneList;
+
+    private List<Email> emailList;
+
+    private List<Address> addressList;
 
     public String getId() {
         return id;
@@ -186,6 +193,30 @@ public class Contact implements Serializable {
 
     public void setDxesoftCompany(String dxesoftCompany) {
         this.dxesoftCompany = dxesoftCompany;
+    }
+
+    public List<PhoneNumber> getPhoneList() {
+        return phoneList;
+    }
+
+    public void setPhoneList(List<PhoneNumber> phoneList) {
+        this.phoneList = phoneList;
+    }
+
+    public List<Email> getEmailList() {
+        return emailList;
+    }
+
+    public void setEmailList(List<Email> emailList) {
+        this.emailList = emailList;
+    }
+
+    public List<Address> getAddressList() {
+        return addressList;
+    }
+
+    public void setAddressList(List<Address> addressList) {
+        this.addressList = addressList;
     }
 
     @Override
