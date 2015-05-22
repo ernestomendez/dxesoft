@@ -12,8 +12,8 @@
             </h4>
         </div>
         <div class="col-xs-2 col-sm-2 col-md-2">
-            <button type="button" class="btn btn-primary btn-regular"><span translate="entity.action.edit"></span></button>
-            <button type="button" class="btn btn-primary btn-regular"><span translate="entity.action.delete"></span></button>
+            <button type="button" class="btn btn-primary btn-regular" ng-click="edit()"><span translate="entity.action.edit"></span></button>
+            <button type="button" class="btn btn-danger btn-regular"><span translate="entity.action.delete"></span></button>
         </div>
     </div>
     <div class="row vertical-spacer">
@@ -25,8 +25,8 @@
                 <dd>
                     <span translate="dxesoftApp.contactos.phone">Phone</span>
                 </dd>
-                <dd>
-                    {{contactSelected.phoneNumber}}
+                <dd ng-repeat="phone in contactSelected.phoneList">
+                    {{phone.phoneNumber}}
                 </dd>
             </dl>
             <dl class="dl-horizontal dl-icon">
@@ -36,8 +36,8 @@
                 <dd>
                     <span translate="dxesoftApp.contactos.email">Email</span>
                 </dd>
-                <dd>
-                    {{contactSelected.email}}
+                <dd ng-repeat="email in contactSelected.emailList">
+                    {{email.email}}
                 </dd>
             </dl>
             <dl class="dl-horizontal dl-icon">
@@ -47,8 +47,8 @@
                 <dd>
                     <span translate="dxesoftApp.contactos.address.title">Address</span>
                 </dd>
-                <dd>
-                    {{contactSelected.address}}
+                <dd ng-repeat="address in contactSelected.addressList">
+                    {{address.street}}
                 </dd>
             </dl>
         </div>

@@ -58,8 +58,55 @@ angular.module('dxesoftApp')
                 parent: 'detail',
                 //url: '/contacto/',
                 data: {
-                    roles: ['ROLE_USER'],
-                    pageTitle: 'dxesoftApp.contactos.home.title'
+                    roles: ['ROLE_USER']
+                },
+                onEnter: ['$stateParams', '$state', '$modal', '$resource', function($stateParams, $state, $modal) {
+                    console.log('on enter', $stateParams);
+                    $modal.open({
+                        size:'lg',
+                        templateUrl: 'scripts/app/contacto/contactoForm/contacto-form.html',
+                        resolve: {
+                            translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
+                                $translatePartialLoader.addPart('contacto'); // ojo este debe estar definido en el controller
+                                return $translate.refresh();
+                            }]
+                        },
+                        controller: 'Contacto-formController'
+                    }).result.finally(function() {
+                            console.log("modal finally")
+                        });
+                }]
+            })
+            .state('detailContact', {
+                url: '/:id',
+                parent: 'contactos',
+                params: {'id': null},
+                //url: '',
+                data: {
+                    roles: ['ROLE_USER']
+                },
+                onEnter: function($stateParams) {
+                    console.log('detailContact on enter', $stateParams.id);
+                },
+                views: {
+                    'detail': {
+                        templateUrl: 'scripts/app/contacto/contactodetail/contacto-detail.html',
+                        controller: 'Contacto-detail-remoteController'
+                    }
+                },
+                resolve: {
+                    translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
+                        $translatePartialLoader.addPart('contacto'); // ojo este debe estar definido en el controller
+                        return $translate.refresh();
+                    }]
+                }
+            })
+            .state('editContact', {
+                parent: 'detail',
+                url: '/:id',
+                //params: {'id': null},
+                data: {
+                    roles: ['ROLE_USER']
                 },
                 onEnter: ['$stateParams', '$state', '$modal', '$resource', function($stateParams, $state, $modal) {
                     console.log('on enter', $stateParams);
@@ -78,30 +125,6 @@ angular.module('dxesoftApp')
                             console.log("modal finally")
                         });
                 }]
-            })
-            .state('detailContact', {
-                url: '/:id',
-                parent: 'contactos',
-                params: {'id': null},
-                //url: '',
-                data: {
-                    roles: ['ROLE_USER']
-                },
-                onEnter: function($stateParams) {
-                    console.log('%%%%%%%%%%% detailContact on enter', $stateParams.id);
-                },
-                views: {
-                    'detail': {
-                        templateUrl: 'scripts/app/contacto/contactodetail/contacto-detail.html',
-                        controller: 'Contacto-detail-remoteController'
-                    }
-                },
-                resolve: {
-                    translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
-                        $translatePartialLoader.addPart('contacto'); // ojo este debe estar definido en el controller
-                        return $translate.refresh();
-                    }]
-                }
             })
     }
 );
