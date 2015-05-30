@@ -4,13 +4,14 @@
 'use strict';
 
 angular.module('dxesoftApp')
-    .controller('ContactosController', function ($scope, Contact, ParseLinks, $state, $rootScope) {
+    .controller('ContactosController', function ($scope, Contact, ParseLinks, $state, $rootScope, Sharedcontact) {
         $scope.contacts = [];
         $scope.page = 1;
         $scope.loadAll = function() {
-            Contact.query({page: $scope.page, per_page: 20}, function(result, headers, getResponseHeaders) {
+            Contact.query({page: $scope.page, per_page: 20}, function(result, headers) {
                 $scope.links = ParseLinks.parse(headers('link'));
                 $scope.contacts = result;
+                Sharedcontact.setContactList($scope.contacts);
             });
         };
         $scope.loadPage = function(page) {
@@ -19,18 +20,18 @@ angular.module('dxesoftApp')
         };
 
         $scope.loadAll();
-        $scope.contacto = '';
         $scope.selectedRow = null;
 
         $scope.setSelected = function (contact) {
             console.log("set selected");
             $scope.selectedContact = contact;
-            $rootScope.selectedContact = contact;
-            $state.go('detail', {id: contact.id});
+            $state.go('detailContact', {id: $scope.selectedContact.id});
         };
 
         $scope.isActive = function(contact) {
-            return $scope.selectedContact === contact;
+            if($scope.selectedContact != undefined) {
+                return $scope.selectedContact.id === contact.id;
+            }
         };
 
         $scope.findBy = function() {
@@ -38,7 +39,12 @@ angular.module('dxesoftApp')
             Contact.findByName({page: $scope.page, per_page:20, nombre:$scope.searchContact}, function(result, headers) {
                 $scope.links = ParseLinks.parse(headers('link'));
                 $scope.contacts = result;
+                Sharedcontact.setContactList($scope.contacts);
             });
-        }
+        };
+
+        $scope.$on('ContactChanged', function(event, contactList) {
+            $scope.contacts = contactList;
+        });
 
     });

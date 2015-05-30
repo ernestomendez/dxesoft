@@ -8882,7 +8882,7 @@ ul#strength {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003350}}
 #contact-list > div.panel-body > div.contact-list-element > div.contact-list-info > div.contact-list-name {
-  padding: 0 0 5px 0;
+  padding: 12px 0 5px 0;
   font-weight: 700;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/ernesto\/projects\/dxesoft\/dxesoft-src\/src\/main\/scss\/main\.scss}line{font-family:\00003355}}

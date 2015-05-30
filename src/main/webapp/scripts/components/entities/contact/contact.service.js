@@ -9,13 +9,11 @@ angular.module('dxesoftApp')
                 params: {id: '@id'},
                 transformResponse: function (data) {
                     data = angular.fromJson(data);
-                    console.log("data.birthDate: ", data.birthDate);
                     if( data.birthDate) {
                         var birthDateFrom = data.birthDate.split("-");
                         data.birthDate = new Date(new Date(birthDateFrom[0], birthDateFrom[1] - 1, birthDateFrom[2]));
                     }
                     data.creationDate = new Date(data.creationDate);
-                    console.log("data.creationDate: ", data.creationDate);
                     console.log("data: ", data);
                     return data;
                 }

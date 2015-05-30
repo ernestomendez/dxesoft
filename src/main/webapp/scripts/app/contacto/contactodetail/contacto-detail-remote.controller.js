@@ -4,15 +4,18 @@
 'use strict';
 
 angular.module('dxesoftApp')
-    .controller('Contacto-detail-remoteController', function ($scope, Contact, $stateParams) {
+    .controller('Contacto-detail-remoteController', function ($scope, Contact, $stateParams, $state, Sharedcontact) {
         $scope.get = function(id) {
-            console.log("Contacto-detail-remoteController id: ", id);
             Contact.get({id: id}, function(result) {
-                console.log("result: ", result);
                 $scope.contactSelected = result;
+                Sharedcontact.setContact($scope.contactSelected);
             })
         };
 
         $scope.get($stateParams.id);
+
+        $scope.edit = function () {
+            $state.go('editContact',{id: $scope.contactSelected.id});
+        }
 
     });

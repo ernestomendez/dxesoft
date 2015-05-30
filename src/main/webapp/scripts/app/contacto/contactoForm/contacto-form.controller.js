@@ -4,19 +4,17 @@
 'use strict';
 
 angular.module('dxesoftApp')
-    .controller('Contacto-formController', function($scope, $rootScope, Contact, $stateParams, contact_utils, $modalInstance, $state) {
+    .controller('Contacto-formController', function($scope, $rootScope, Contact, $stateParams, contact_utils, $modalInstance, $state, Sharedcontact) {
 
         $scope.phoneTypeOptions = contact_utils.getPhoneTypeOptions();
         $scope.emailTypeOptions = contact_utils.getEmailTypeOptions();
         $scope.addressTypeOptions = contact_utils.getAddressTypeOptions();
 
 
-        console.log("*********************************** $stateParams.id: ", $stateParams.id);
+        $scope.createOrUpdateContact = function() {
+            $scope.edit = $stateParams.edit;
 
-        $scope.addEdit = function() {
-            console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% addEdit $stateParams.id: ", $stateParams.id);
-
-            if(!$stateParams.id) {
+            if(!$stateParams.edit) {
                 $scope.contact = {};
                 $scope.edition = false;
 
@@ -31,9 +29,8 @@ angular.module('dxesoftApp')
                 }];
 
             } else {
-                $scope.contact = Contact.get({id: $stateParams.id}, function(result) {
+                $scope.contact = Contact.get({id: $stateParams.id}, function() {
                     if (!$scope.contact.phoneList || $scope.contact.phoneList.length === 0) {
-                        //console.log("($scope.contact.phoneList.length() == 0)", ($scope.contact.phoneList.length === 0));
                         $scope.contact.phoneList = [{phoneType: $scope.phoneTypeOptions[0].code, phoneNumber: ""}];
                     }
 
@@ -54,7 +51,7 @@ angular.module('dxesoftApp')
             }
         };
 
-        $scope.addEdit();
+        $scope.createOrUpdateContact();
 
         $scope.addPhone = function(index) {
             $scope.contact.phoneList.push({phoneType: $scope.phoneTypeOptions[++index].code, phoneNumber:"" });
@@ -90,25 +87,37 @@ angular.module('dxesoftApp')
             $scope.contact.addressList.splice(index, 1);
         };
 
-        $scope.create = function () {
+        $scope.create = function() {
             $scope.prepareContact();
 
             $scope.contact = Contact.post($scope.contact,
-                function(result) {
+                function() {
+                    Sharedcontact.setContact($scope.contact);
                     $state.go('detailContact', {id:$scope.contact.id});
                     $modalInstance.close();
                 }
             );
         };
 
+        $scope.update = function() {
+            $scope.prepareContact();
+
+            $scope.contact = Contact.update($scope.contact, function() {
+                Sharedcontact.setContact($scope.contact);
+                Sharedcontact.updateContactList($scope.contact);
+                $modalInstance.close();
+                $state.go('detailContact', {id:$scope.contact.id});
+            });
+        };
+
         $scope.clear = function () {
-            console.log("clear");
-            $scope.contact = {nombres: null, apellidoPaterno: null, apellidoMaterno: null, gender: null, birthDate: null, company: null, title: null, facebook: null, tiwtter: null, legalId: null, owner: null, creationDate: null, dxesoftCompany: null, id: null, phoneTypeId: null, phoneList: null, emailList: null, addressList: null};
+            var id = $scope.contact.id;
+            $scope.contact = {};
             $scope.contactEditForm.$setPristine();
             $scope.contactEditForm.$setUntouched();
 
             $modalInstance.dismiss('cancel');
-            $state.go('detail');
+            $state.go('detailContact',{id: id});
         };
 
         $scope.prepareContact = function() {
@@ -119,7 +128,6 @@ angular.module('dxesoftApp')
             contact_utils.removeEmptyElementsFromList($scope.contact.addressList, "street");
 
             $scope.contact.creationDate= new Date();
-            console.log("creation date: ", $scope.contact.creationDate);
             $scope.contact.dxesoftCompany="Dxesoft";
 
         };

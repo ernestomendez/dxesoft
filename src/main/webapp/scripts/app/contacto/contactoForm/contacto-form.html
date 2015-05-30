@@ -1,7 +1,7 @@
     <div class="modal-content modal-add-contact">
         <form name="contactEditForm" role="form" novalidate
               class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
-              ng-submit="create()" show-validation>
+              show-validation>
 
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
@@ -307,8 +307,11 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
                     <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
                 </button>
-                <button type="submit" ng-disabled="contactEditForm.$invalid" class="btn btn-primary">
-                    <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                <button ng-if="!edit" type="button" ng-disabled="contactEditForm.$invalid" class="btn btn-primary" ng-click="create()">
+                    <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Create</span>
+                </button>
+                <button ng-if="edit" type="button" ng-disabled="contactEditForm.$invalid" class="btn btn-primary" ng-click="update()">
+                    <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">update</span>
                 </button>
             </div>
         </form>
